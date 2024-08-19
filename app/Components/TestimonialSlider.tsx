@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
             </h2>
             <p className="text-lg mb-8 text-[#545454]">
               Our clients' satisfaction is our top priority. Here's what they
-              have to say about their experiences with our design services.
+              have to say about their experiences with our services.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
               Share Your Experience

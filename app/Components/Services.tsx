@@ -29,7 +29,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
         </span>
       </button>
       {isOpen && (
-        <div className="px-4 pt-4 pb-2 text-sm text-[#545454] animate-fadeIn">
+        <div className="px-4 pt-4 pb-2 text-sm text-[#545454] text-justify animate-fadeIn">
           {children}
         </div>
       )}
@@ -94,7 +94,7 @@ const Services: React.FC = () => {
               Crafting Luxurious Spaces with Expert Interior Design
             </h2>
 
-            <p className="text-base md:text-lg text-[#545454] py-2">
+            <p className="text-base md:text-lg text-[#545454] py-2 text-justify">
               At Br Interior, we excel in transforming ordinary spaces into
               extraordinary living environments. We bring visions to life with
               unparalleled creativity and precision. From elegant homes, premium

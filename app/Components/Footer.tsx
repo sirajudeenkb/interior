@@ -93,31 +93,25 @@ function Footer() {
           <div className="p-5">
             <p className=" font-semibold text-2xl mb-5">Our Services</p>
             <p className=" text-base pb-2 mb-2 font-light hover:underline ">
-              <a href=""> Home Interior</a>
+              <a href="/services#home-office"> Home & Office Interior</a>
             </p>
             <p className=" text-base pb-2 mb-2 font-light hover:underline ">
-              <a href=""> Office Interior</a>
+              <a href="/services#modular-kitchen"> Modular Kitchen</a>
             </p>
             <p className=" text-base pb-2 mb-2 font-light hover:underline ">
-              <a href=""> Modular Kitchen</a>
+              <a href="/services#painting-services"> Painting Services</a>
             </p>
             <p className=" text-base pb-2 mb-2 font-light hover:underline ">
-              <a href=""> Painting Services</a>
+              <a href="/services#other-services"> Other Services</a>
             </p>
           </div>
           <div className="p-5">
             <p className=" font-semibold text-2xl mb-5">Contact Us</p>
             <p className=" text-md pb-2 font-light cursor-pointer">
               <span className=" font-medium  ">Phone :</span>{" "}
-              <span className=" hover:underline">
-                {" "}
-                +91 9884814786
-              </span>
+              <span className=" hover:underline"> +91 9884814786</span>
               <span> | </span>
-              <span className=" hover:underline">
-                {" "}
-                +91 9884814060
-              </span>
+              <span className=" hover:underline"> +91 9884814060</span>
             </p>
             <p className=" text-md pb-2 font-light cursor-pointer">
               <span className=" font-medium  ">Email :</span>{" "}

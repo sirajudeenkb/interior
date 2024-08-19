@@ -3,7 +3,7 @@ import React from "react";
 import { useRouter } from "next/navigation"; // Updated import
 import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
-function Footer() {
+const Footer: React.FC = () => {
   const router = useRouter();
 
   const handleNavLinkClick = (id: string) => {
@@ -107,15 +107,24 @@ function Footer() {
           </div>
           <div className="p-5">
             <p className="font-semibold text-2xl mb-5">Contact Us</p>
-            <p className="text-md pb-2 font-light cursor-pointer">
+            <p className="text-md pb-2 font-light">
               <span className="font-medium">Phone :</span>{" "}
-              <span className="hover:underline"> +91 9884814786</span>
+              <a href="tel:+919884814786" className="hover:underline">
+                +91 9884814786
+              </a>
               <span> | </span>
-              <span className="hover:underline"> +91 9884814060</span>
+              <a href="tel:+919884814060" className="hover:underline">
+                +91 9884814060
+              </a>
             </p>
-            <p className="text-md pb-2 font-light cursor-pointer">
+            <p className="text-md pb-2 font-light">
               <span className="font-medium">Email :</span>{" "}
-              <span className="hover:underline">brinterior.in@gmail.com</span>
+              <a
+                href="mailto:brinterior.in@gmail.com"
+                className="hover:underline"
+              >
+                brinterior.in@gmail.com
+              </a>
             </p>
           </div>
         </div>
@@ -127,13 +136,13 @@ function Footer() {
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              Images by storyset on Freepik
+              ❤️ Images by storyset on Freepik
             </a>
           </p>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Footer;

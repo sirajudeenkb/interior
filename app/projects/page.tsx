@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
         title="Our Projects"
         description="Explore our portfolio of completed projects and see our work in action."
       />
-      <div className="container mx-auto px-10 sm:px-8 md:px-12 py-8">
+      <div className="container mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5">
           {images.map((image, index) => (
             <div

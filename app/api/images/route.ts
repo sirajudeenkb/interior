@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   const nextCursor = searchParams.get("next_cursor") || undefined;
 
   try {
-    const results = await cloudinary.api.resources({
+    const results = await cloudinary.api.resources_by_asset_folder("Interior", {
       max_results: 10,
       next_cursor: nextCursor,
     });

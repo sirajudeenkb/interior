@@ -14,8 +14,6 @@ import modular_kitchen_services from "../../public/images/modular_kitchen_servic
 import painting_services from "../../public/images/painting.png";
 import painting from "../../public/images/painting_services.png";
 
-
-
 const Services: React.FC = () => {
   const { ref: section_oneRef, inView: section_oneInView } = useInView({
     triggerOnce: true,
@@ -80,24 +78,28 @@ const Services: React.FC = () => {
           >
             <div className="text-center lg:text-left mb-6">
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-left text-[#1F1F1F]">
-                Welcome to
+                Transformative Spaces That Inspire and Impress
               </h3>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-2 text-left text-[#1F1F1F]">
-                Br Interior Decorators
+                Home & Office Interiors
               </h2>
             </div>
-            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
-              Narasimha Interior Decorators is your go-to choice for top and
-              Budget interior design services in Madipakkam & All over Chennai
-              Established in 2016. Specializing in home and office
-              transformations, we excel in crafting unique designs for bedrooms,
-              kitchens, and more. Our commitment to affordability ensures
-              quality without compromise. Experience the perfect blend of
-              comfort and aesthetics with us. Our commitment to affordability
-              ensures quality without compromise. Experience the perfect blend
-              of comfort and aesthetics with us.
+            <p className="text-sm sm:text-base md:text-lg mb-4 text-[#545454] text-justify">
+              For homes, we craft sanctuaries that reflect your personality and
+              adapt to your lifestyle. Imagine walls that change color with your
+              mood, furniture that morphs for entertaining or relaxing, and
+              smart systems that anticipate your needs before you do.
               <br />
               <br />
+              Our office designs boost productivity through biophilic elements,
+              create collaborative zones that spark innovation, and incorporate
+              flexible layouts that evolve with your business, ensuring every
+              corner contributes to employee well-being and company culture.
+              <br />
+              <br />
+              Whether it's a family haven or a professional powerhouse, Br
+              Interior doesn't just design spaces – we craft experiences that
+              elevate daily life and work to extraordinary heights.
             </p>
 
             <div className="flex justify-center lg:justify-start">
@@ -222,22 +224,22 @@ const Services: React.FC = () => {
             <MiniCard
               imageUrl="/images/tv_unit.png"
               title="TV Unit"
-              description="Elevate your living room with Narasimha Interior Decorators' sleek TV units. Designed for both style and functionality, our modern units enhance your entertainment space effortlessly. Discover our range today and transform your home entertainment experience."
+              description="Elevate your living space with Br Interior's sleek TV unit designs. Our modern, functional creations seamlessly blend style and practicality, enhancing your entertainment area. We craft custom solutions that organize your electronics and showcase your personal style."
             />
             <MiniCard
               imageUrl="/images/loft_design.png"
               title="Loft Designer"
-              description="Elevate your living room with Narasimha Interior Decorators' sleek TV units. Designed for both style and functionality, our modern units enhance your entertainment space effortlessly. Discover our range today and transform your home entertainment experience."
+              description="Maximize your space with Br Interior's innovative loft designs. We transform underutilized areas into stylish, multifunctional spaces that add value to your home. Our expert team creates custom loft solutions, perfectly balancing aesthetics, functionality and delivery"
             />
             <MiniCard
               imageUrl="/images/wardrobe.png"
               title="Wardrobe"
-              description="Elevate your living room with Narasimha Interior Decorators' sleek TV units. Designed for both style and functionality, our modern units enhance your entertainment space effortlessly. Discover our range today and transform your home entertainment experience."
+              description="Experience the luxury of a perfectly organized space with Br Interior's custom wardrobe designs. We craft elegant storage solutions tailored to your needs, from walk-in closets to built-in wardrobes. Our designs combine premium materials and timeless style to elevate your room."
             />
             <MiniCard
               imageUrl="/images/false_ceiling.png"
               title="False Ceiling"
-              description="Elevate your living room with Narasimha Interior Decorators' sleek TV units. Designed for both style and functionality, our modern units enhance your entertainment space effortlessly. Discover our range today and transform your home entertainment experience."
+              description="Add a touch of sophistication to any room with Br Interior's stunning false ceiling designs. Our creative team crafts architectural masterpieces that transform your space, incorporating ambient lighting and unique textures. From modern minimalist to ornate classical styles."
             />
           </div>
         </div>
@@ -303,27 +305,27 @@ const Services: React.FC = () => {
           >
             <div className="text-center lg:text-left mb-6">
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-left text-[#1F1F1F]">
-                Welcome to
+                Culinary Spaces with Style and Functionality
               </h3>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-2 text-left text-[#1F1F1F]">
-                Br Interior Decorators
+                Modular Kitchen Solutions
               </h2>
             </div>
-            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
-              Narasimha Interior Decorators is your go-to choice for top and
-              Budget interior design services in Madipakkam & All over Chennai
-              Established in 2016. Specializing in home and office
-              transformations, we excel in crafting unique designs for bedrooms,
-              kitchens, and more. Our commitment to affordability ensures
-              quality without compromise. Experience the perfect blend of
-              comfort and aesthetics with us.
+            <p className="text-sm sm:text-base md:text-lg mb-4 text-[#545454] text-justify">
+              Br Interior brings culinary dreams to life with our
+              state-of-the-art modular kitchen designs, a specialty we've
+              perfected since 2010. We transform kitchens across Chennai, from
+              Kolathur to Triplicane and beyond, into functional works of art.
+              Our expert team crafts bespoke solutions that blend ergonomic
+              efficiency with stunning aesthetics, tailored to your unique needs
+              and style preferences.
               <br />
               <br />
-              At Narasimha Interior Decorators, we take pride in transforming
-              spaces into stunning living environments. As the top interior
-              decorators in Madipakkam, Medavakkam, Nanganallur, Velachery,
-              Keelkattalai, Pallikaranai, OMR, ECR, and Chennai, we bring your
-              vision to life with creativity, precision, and expertise.
+              Experience the perfect balance of form and function with our
+              innovative storage solutions, durable finishes, and attention to
+              detail. Let Br Interior redefine your culinary space, turning it
+              into the heart of your home where memories are made and culinary
+              passions flourish.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
               <Link href="/about">Know More</Link>
@@ -365,27 +367,27 @@ const Services: React.FC = () => {
           >
             <div className="text-center lg:text-left mb-6">
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-left text-[#1F1F1F]">
-                Welcome to
+                Transforming Spaces with Colorful Elegance
               </h3>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-2 text-left text-[#1F1F1F]">
-                Br Interior Decorators
+                Premium Painting Services
               </h2>
             </div>
             <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
-              Narasimha Interior Decorators is your go-to choice for top and
-              Budget interior design services in Madipakkam & All over Chennai
-              Established in 2016. Specializing in home and office
-              transformations, we excel in crafting unique designs for bedrooms,
-              kitchens, and more. Our commitment to affordability ensures
-              quality without compromise. Experience the perfect blend of
-              comfort and aesthetics with us.
+              At Br Interior, we elevate your living spaces with our premium
+              painting services. Our expert team specializes in creating
+              stunning visual transformations for homes and offices across
+              Chennai, including Kolathur, Anna Nagar, Triplicane, and Parrys. We excel in
+              delivering a wide range of finishes, from classic elegance to
+              contemporary chic, using top-quality paints and innovative
+              techniques. Our commitment to excellence ensures a flawless finish
+              that enhances your interior's aesthetics and durability.
               <br />
               <br />
-              At Narasimha Interior Decorators, we take pride in transforming
-              spaces into stunning living environments. As the top interior
-              decorators in Madipakkam, Medavakkam, Nanganallur, Velachery,
-              Keelkattalai, Pallikaranai, OMR, ECR, and Chennai, we bring your
-              vision to life with creativity, precision, and expertise.
+              Experience the perfect blend of color, texture, and craftsmanship
+              as we bring your vision to life. Trust Br Interior to revitalize
+              your space with precision, creativity, and unmatched expertise,
+              making every wall a masterpiece.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
               <Link href="/about">Know More</Link>

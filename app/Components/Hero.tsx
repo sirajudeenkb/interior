@@ -10,8 +10,8 @@ const Hero = () => {
   const [styleCount, setStyleCount] = useState(1);
 
   useEffect(() => {
-    animateValue(setProjectCount, 500, 2000);
-    animateValue(setCustomerCount, 1000, 2000);
+    animateValue(setProjectCount, 75, 2000);
+    animateValue(setCustomerCount, 100, 2000);
     animateValue(setStyleCount, 50, 2000);
   }, []);
 

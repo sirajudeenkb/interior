@@ -69,7 +69,7 @@ const About = () => {
               <br />
               At Br Interior, we take pride in creating breathtaking living and
               working environments. As leading interior designers in Chennai, we
-              serve areas including Perambur, Triplicane, Parrys, and beyond.
+              serve areas including Kolathur, Anna Nagar, Triplicane, Parrys, and beyond.
               Our skilled team brings your vision to life with creativity,
               precision, and unmatched expertise. We offer a full range of
               interior solutions to elevate your space.

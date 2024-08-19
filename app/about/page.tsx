@@ -99,7 +99,7 @@ const About: React.FC = () => {
               <br />
               <br />
               As leading interior designers in Chennai, including areas like
-              Perambur, Triplicane, and Parrys, we bring your vision to life
+              Kolathur, Anna Nagar, Triplicane, and Parrys, we bring your vision to life
               with creativity, precision, and expertise. We transform spaces
               throughout the city, from residential havens to corporate offices,
               using innovative design solutions and premium materials to exceed

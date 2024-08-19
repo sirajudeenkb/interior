@@ -16,7 +16,6 @@ export async function GET(request: Request) {
       max_results: 10,
       next_cursor: nextCursor,
     });
-    console.log(results)
     return NextResponse.json({
       resources: results.resources,
       next_cursor: results.next_cursor,

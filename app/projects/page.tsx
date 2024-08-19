@@ -19,22 +19,7 @@ const Projects: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [nextCursor, setNextCursor] = useState<string | undefined>(undefined);
   const [hasMore, setHasMore] = useState(true);
-  const isInitialLoad = useRef(true);
-
   const observer = useRef<IntersectionObserver | null>(null);
-  const lastImageElementRef = useCallback(
-    (node: HTMLDivElement | null) => {
-      if (loading) return;
-      if (observer.current) observer.current.disconnect();
-      observer.current = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting && hasMore && !isInitialLoad.current) {
-          loadMoreImages();
-        }
-      });
-      if (node) observer.current.observe(node);
-    },
-    [loading, hasMore]
-  );
 
   const fetchImages = async (cursor?: string) => {
     setLoading(true);
@@ -55,17 +40,16 @@ const Projects: React.FC = () => {
     }
   };
 
-  const loadInitialImages = async () => {
+  const loadInitialImages = useCallback(async () => {
     const data = await fetchImages();
     if (data) {
       setImages(data.resources);
       setNextCursor(data.next_cursor);
       setHasMore(!!data.next_cursor);
     }
-    isInitialLoad.current = false;
-  };
+  }, []);
 
-  const loadMoreImages = async () => {
+  const loadMoreImages = useCallback(async () => {
     if (!nextCursor || loading) return;
     const data = await fetchImages(nextCursor);
     if (data) {
@@ -73,11 +57,25 @@ const Projects: React.FC = () => {
       setNextCursor(data.next_cursor);
       setHasMore(!!data.next_cursor);
     }
-  };
+  }, [nextCursor, loading]);
 
   useEffect(() => {
     loadInitialImages();
-  }, []);
+  }, [loadInitialImages]);
+
+  const lastImageElementRef = useCallback(
+    (node: HTMLDivElement | null) => {
+      if (loading || !hasMore) return;
+      if (observer.current) observer.current.disconnect();
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          loadMoreImages();
+        }
+      });
+      if (node) observer.current.observe(node);
+    },
+    [loading, hasMore, loadMoreImages]
+  );
 
   const getImageSize = (index: number) => {
     if (index % 5 === 0 || index % 5 === 3) {

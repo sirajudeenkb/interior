@@ -138,7 +138,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:flex-row justify-center gap-8 md:gap-12 lg:gap-16 max-w-full sm:p-8 md:p-12 lg:p-16">
+        <div className="relative z-10 flex flex-col md:flex-row justify-center gap-8 md:gap-12 lg:gap-16 max-w-full p-8 md:p-12 lg:p-16">
           <div
             ref={missionRef}
             className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0 transition-opacity duration-[2500ms] ${

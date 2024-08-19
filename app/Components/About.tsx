@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import interior from "../../public/images/interior-2.jpg";
+import section from "../../public/images/section.jpg";
+
 
 
 const About = () => {
@@ -16,7 +18,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
           {/* Left container for the image */}
 
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 ">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10 ">
             <div className="relative w-full pb-[75%]">
               {" "}
               {/* 4:3 aspect ratio */}
@@ -62,7 +64,7 @@ const About = () => {
         </div>
       </div>
       {/* Steps Section */}
-      <div className="container mx-auto py-6 md:py-12 lg:py-16">
+      <div className="container mx-auto py-4 md:py-12 lg:py-16">
         <div className="flex flex-col lg:flex-row items-stretch">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between">
             <div className="space-y-10">
@@ -131,7 +133,7 @@ const About = () => {
           <div className="w-full lg:w-1/2 flex flex-col justify-start">
             <div className="relative w-full pb-[75%]">
               <Image
-                src={interior}
+                src={section}
                 alt="About Us"
                 layout="fill"
                 className="rounded-lg object-cover"

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import interior from "../../public/images/interior-2.jpg";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 interface AccordionItemProps {
   title: string;
@@ -115,7 +116,7 @@ const Services: React.FC = () => {
             </div>
 
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
-              Explore More
+              <Link href="/services">Explore More</Link>
             </button>
           </div>
         </div>

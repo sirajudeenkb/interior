@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import interior from "../../public/images/interior-2.jpg";
 import section from "../../public/images/section.jpg";
+import Link from "next/link";
 
 const About = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView({
@@ -73,7 +74,7 @@ const About = () => {
               vision to life with creativity, precision, and expertise.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-              Know More
+              <Link href="/about">Know More</Link>
             </button>
           </div>
         </div>

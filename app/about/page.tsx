@@ -51,9 +51,9 @@ const About: React.FC = () => {
             version="1.1"
           >
             <rect x="0" y="0" width="1577" height="620" fill="#ffffff"></rect>
-            <g transform="translate(1572.1682739191738 484.46670565966974)">
+            <g transform="translate(10.620645511858868 -100.73077222131315)">
               <path
-                d="M380.4 -441.8C511.7 -343.2 649.8 -241 692.1 -106.4C734.5 28.2 681.2 195.4 602.4 362.8C523.6 530.2 419.3 697.8 248.4 819.5C77.5 941.1 -160.1 1016.7 -308.3 927.8C-456.5 838.8 -515.3 585.1 -575.6 380.8C-635.9 176.4 -697.6 21.2 -697.4 -147.9C-697.3 -317 -635.3 -500.2 -508.8 -599.7C-382.2 -699.2 -191.1 -715.1 -33.3 -675.4C124.5 -635.8 249.1 -540.5 380.4 -441.8"
+                d="M359 -453.4C468.7 -335.9 563.3 -225.9 654.9 -62.7C746.6 100.5 835.3 317 795.3 527.6C755.2 738.1 586.4 942.7 405.9 926.7C225.4 910.6 33.2 673.8 -215.4 585.9C-464 498 -768.9 559 -818.7 472.7C-868.6 386.4 -663.3 152.8 -567.8 -50.1C-472.4 -253 -486.9 -425.3 -410.6 -548.6C-334.2 -672 -167.1 -746.5 -21.2 -721.2C124.7 -695.9 249.4 -570.9 359 -453.4"
                 fill="#ffa48f"
               ></path>
             </g>
@@ -99,11 +99,11 @@ const About: React.FC = () => {
               <br />
               <br />
               As leading interior designers in Chennai, including areas like
-              Kolathur, Anna Nagar, Triplicane, and Parrys, we bring your vision to life
-              with creativity, precision, and expertise. We transform spaces
-              throughout the city, from residential havens to corporate offices,
-              using innovative design solutions and premium materials to exceed
-              your expectations.
+              Kolathur, Anna Nagar, Triplicane, and Parrys, we bring your vision
+              to life with creativity, precision, and expertise. We transform
+              spaces throughout the city, from residential havens to corporate
+              offices, using innovative design solutions and premium materials
+              to exceed your expectations.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
               <Link href="/contact">Contact Us</Link>
@@ -125,9 +125,9 @@ const About: React.FC = () => {
             version="1.1"
           >
             <rect x="0" y="0" width="1577" height="620" fill="#ffffff"></rect>
-            <g transform="translate(10.620645511858868 -100.73077222131315)">
+            <g transform="translate(1572.1682739191738 484.46670565966974)">
               <path
-                d="M359 -453.4C468.7 -335.9 563.3 -225.9 654.9 -62.7C746.6 100.5 835.3 317 795.3 527.6C755.2 738.1 586.4 942.7 405.9 926.7C225.4 910.6 33.2 673.8 -215.4 585.9C-464 498 -768.9 559 -818.7 472.7C-868.6 386.4 -663.3 152.8 -567.8 -50.1C-472.4 -253 -486.9 -425.3 -410.6 -548.6C-334.2 -672 -167.1 -746.5 -21.2 -721.2C124.7 -695.9 249.4 -570.9 359 -453.4"
+                d="M380.4 -441.8C511.7 -343.2 649.8 -241 692.1 -106.4C734.5 28.2 681.2 195.4 602.4 362.8C523.6 530.2 419.3 697.8 248.4 819.5C77.5 941.1 -160.1 1016.7 -308.3 927.8C-456.5 838.8 -515.3 585.1 -575.6 380.8C-635.9 176.4 -697.6 21.2 -697.4 -147.9C-697.3 -317 -635.3 -500.2 -508.8 -599.7C-382.2 -699.2 -191.1 -715.1 -33.3 -675.4C124.5 -635.8 249.1 -540.5 380.4 -441.8"
                 fill="#ffa48f"
               ></path>
             </g>
@@ -199,12 +199,11 @@ const About: React.FC = () => {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
-            className="w-full h-full object-cover"
           >
             <rect x="0" y="0" width="1577" height="620" fill="#ffffff"></rect>
-            <g transform="translate(1572.1682739191738 484.46670565966974)">
+            <g transform="translate(10.620645511858868 -100.73077222131315)">
               <path
-                d="M380.4 -441.8C511.7 -343.2 649.8 -241 692.1 -106.4C734.5 28.2 681.2 195.4 602.4 362.8C523.6 530.2 419.3 697.8 248.4 819.5C77.5 941.1 -160.1 1016.7 -308.3 927.8C-456.5 838.8 -515.3 585.1 -575.6 380.8C-635.9 176.4 -697.6 21.2 -697.4 -147.9C-697.3 -317 -635.3 -500.2 -508.8 -599.7C-382.2 -699.2 -191.1 -715.1 -33.3 -675.4C124.5 -635.8 249.1 -540.5 380.4 -441.8"
+                d="M359 -453.4C468.7 -335.9 563.3 -225.9 654.9 -62.7C746.6 100.5 835.3 317 795.3 527.6C755.2 738.1 586.4 942.7 405.9 926.7C225.4 910.6 33.2 673.8 -215.4 585.9C-464 498 -768.9 559 -818.7 472.7C-868.6 386.4 -663.3 152.8 -567.8 -50.1C-472.4 -253 -486.9 -425.3 -410.6 -548.6C-334.2 -672 -167.1 -746.5 -21.2 -721.2C124.7 -695.9 249.4 -570.9 359 -453.4"
                 fill="#ffa48f"
               ></path>
             </g>

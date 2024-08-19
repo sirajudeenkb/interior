@@ -1,11 +1,42 @@
+"use client"
 import Image from 'next/image';
-import React from 'react';
 import interior from '../../public/images/interior-1.jpg'
+import React, { useState, useEffect, SetStateAction, Dispatch } from 'react';
 
 const Hero = () => {
+
+  const [projectCount, setProjectCount] = useState(1);
+  const [customerCount, setCustomerCount] = useState(1);
+  const [styleCount, setStyleCount] = useState(1);
+
+  useEffect(() => {
+    animateValue(setProjectCount, 500, 2000);
+    animateValue(setCustomerCount, 1000, 2000);
+    animateValue(setStyleCount, 50, 2000);
+  }, []);
+
+  const animateValue = (
+  setter: Dispatch<SetStateAction<number>>,
+  end: number,
+  duration: number
+) => {
+  let start = 1;
+  let range = end - start;
+  let current = start;
+  let increment = end > start ? 1 : -1;
+  let stepTime = Math.abs(Math.floor(duration / range));
+  let timer = setInterval(() => {
+    current += increment;
+    setter(current);
+    if (current === end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+};
+
   return (
-    <div className="p-6 md:p-12 lg:p-24 flex flex-col-reverse md:flex-row">
-      <div className="flex-1 flex flex-col items-start space-y-6 md:space-y-8 lg:space-y-10 md:mr-8 mt-6 md:mt-0">
+    <div className="p-6 md:p-12 lg:p-24 flex flex-col-reverse md:flex-row overflow-hidden">
+      <div className="flex-1 flex flex-col items-start space-y-6 md:space-y-8 lg:space-y-10 md:mr-8 mt-6 md:mt-0 animate-slide-right">
         <h1 className="font-medium text-5xl md:text-7xl lg:text-8xl text-[#1F1F1F]">
           Interior Design
         </h1>
@@ -22,7 +53,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-between gap-5">
             <div className="flex-1 min-w-[120px]">
               <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F]">
-                500+
+                {projectCount}+
               </p>
               <p className="text-lg md:text-xl font-medium">
                 Projects Completed
@@ -30,20 +61,20 @@ const Hero = () => {
             </div>
             <div className="flex-1 min-w-[120px]">
               <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F] ">
-                1000+
+                {customerCount}+
               </p>
               <p className="text-lg md:text-xl font-medium">Happy Customers</p>
             </div>
             <div className="flex-1 min-w-[120px]">
               <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F]">
-                50+
+                {styleCount}+
               </p>
               <p className="text-lg md:text-xl font-medium">Design Styles</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0 w-full md:w-auto">
+      <div className="flex-shrink-0 w-full md:w-auto animate-slide-left">
         <Image
           className="w-full md:w-auto h-64 md:h-80 lg:h-96 object-cover"
           src={interior}

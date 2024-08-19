@@ -130,8 +130,7 @@ const About = () => {
                   </h3>
                   <p className="text-[#545454] text-sm sm:text-base md:text-lg text-justify">
                     Collaborate with our skilled team to refine and perfect your
-                    design. We ensure every detail reflects your style and meets
-                    functional needs.
+                    design. We ensure every detail reflects your style and needs.
                   </p>
                 </div>
               </div>

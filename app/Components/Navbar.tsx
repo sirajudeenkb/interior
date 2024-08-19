@@ -43,11 +43,7 @@ const Navbar = () => {
           <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold">
             Br Interior
           </span>
-          <Image
-            className="lg:hidden md:hidden sm:block"
-            src={Logo}
-            alt="Logo"
-          />
+          <span className="lg:hidden md:hidden sm:block">Br Interior</span>
         </div>
 
         <div className="hidden lg:flex md:flex gap-x-[50px]">

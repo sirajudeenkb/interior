@@ -31,7 +31,7 @@ function Footer() {
               </p>
               <div className="flex gap-6 pb-5">
                 <a
-                  href="https://www.instagram.com/grivastechnologies/"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -52,7 +52,7 @@ function Footer() {
                   <FaLinkedin className="text-2xl cursor-pointer hover:scale-125" />
                 </a>
                 <a
-                  href="https://www.youtube.com/@Grivastech"
+                  href="https://www.youtube.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -109,11 +109,19 @@ function Footer() {
             <p className=" font-semibold text-2xl mb-5">Contact Us</p>
             <p className=" text-md pb-2 font-light cursor-pointer">
               <span className=" font-medium  ">Phone :</span>{" "}
-              <span className=" hover:underline"> +91 7010258295</span>
+              <span className=" hover:underline">
+                {" "}
+                +91 9884814786
+              </span>
+              <span> | </span>
+              <span className=" hover:underline">
+                {" "}
+                +91 9884814060
+              </span>
             </p>
             <p className=" text-md pb-2 font-light cursor-pointer">
               <span className=" font-medium  ">Email :</span>{" "}
-              <span className=" hover:underline">grivas.techno@gmail.com</span>
+              <span className=" hover:underline">brinterior.in@gmail.com</span>
             </p>
           </div>
         </div>

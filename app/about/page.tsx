@@ -28,7 +28,7 @@ const About: React.FC = () => {
 
   const { ref: stepsRef, inView: stepsInView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   return (

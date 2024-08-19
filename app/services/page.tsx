@@ -17,7 +17,7 @@ import painting from "../../public/images/painting_services.png";
 const Services: React.FC = () => {
   const { ref: section_oneRef, inView: section_oneInView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   const { ref: section_twoRef, inView: section_twoInView } = useInView({

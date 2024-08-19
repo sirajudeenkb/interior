@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
 
   const { ref: contentRef, inView: contentInView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.15,
   });
 
   return (

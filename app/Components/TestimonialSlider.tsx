@@ -76,7 +76,7 @@ const TestimonialSlider = () => {
             <h2 className="text-3xl lg:text-5xl text-[#1F1F1F] font-semibold mb-6">
               What our customers say about us
             </h2>
-            <p className="text-lg mb-8 text-gray-600">
+            <p className="text-lg mb-8 text-[#545454]">
               Our clients' satisfaction is our top priority. Here's what they
               have to say about their experiences with our design services.
             </p>

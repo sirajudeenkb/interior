@@ -69,14 +69,16 @@ const About = () => {
               <br />
               At Br Interior, we take pride in creating breathtaking living and
               working environments. As leading interior designers in Chennai, we
-              serve areas including Kolathur, Anna Nagar, Triplicane, Parrys, and beyond.
-              Our skilled team brings your vision to life with creativity,
-              precision, and unmatched expertise. We offer a full range of
-              interior solutions to elevate your space.
+              serve areas including Kolathur, Anna Nagar, Triplicane, Parrys,
+              and beyond. Our skilled team brings your vision to life with
+              creativity, precision, and unmatched expertise. We offer a full
+              range of interior solutions to elevate your space.
             </p>
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/about">Know More</Link>
-            </button>
+            <Link href="/about">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Know More
+              </button>
+            </Link>
           </div>
         </div>
       </div>

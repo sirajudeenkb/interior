@@ -28,11 +28,11 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-
-      <button className="bg-[#1F1F1F] text-white text-sm font-semibold py-3 px-6 rounded hover:bg-[#444444] hidden lg:block md:block">
-        <Link href="/contact">Contact Us</Link>
-      </button>
-
+      <Link href="/contact">
+        <button className="bg-[#1F1F1F] text-white text-sm font-semibold py-3 px-6 rounded hover:bg-[#444444] hidden lg:block md:block">
+          Contact Us
+        </button>
+      </Link>
       <Image className="lg:hidden md:hidden block" src={Menu} alt="Menu" />
     </nav>
   );

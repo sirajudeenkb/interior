@@ -244,13 +244,15 @@ const Services: React.FC = () => {
           </div>
         </div>
         {/* Button */}
-        <button
-          className={`bg-[#1F1F1F] text-white text-sm font-semibold py-3 px-6 rounded hover:bg-[#444444] mt-4 ${
-            section_twoInView ? "animate-slide-up" : "opacity-0"
-          } transition-opacity duration-500 relative `}
-        >
-          <Link href="/contact">Contact Us</Link>
-        </button>
+        <Link href="/contact">
+          <button
+            className={`bg-[#1F1F1F] text-white text-sm font-semibold py-3 px-6 rounded hover:bg-[#444444] mt-4 ${
+              section_twoInView ? "animate-slide-up" : "opacity-0"
+            } transition-opacity duration-500 relative `}
+          >
+            Contact Us
+          </button>
+        </Link>
       </div>
 
       {/* 3rd section */}
@@ -327,9 +329,11 @@ const Services: React.FC = () => {
               into the heart of your home where memories are made and culinary
               passions flourish.
             </p>
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/about">Know More</Link>
-            </button>
+            <Link href="/modular-kitchen">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Know More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -377,11 +381,12 @@ const Services: React.FC = () => {
               At Br Interior, we elevate your living spaces with our premium
               painting services. Our expert team specializes in creating
               stunning visual transformations for homes and offices across
-              Chennai, including Kolathur, Anna Nagar, Triplicane, and Parrys. We excel in
-              delivering a wide range of finishes, from classic elegance to
-              contemporary chic, using top-quality paints and innovative
-              techniques. Our commitment to excellence ensures a flawless finish
-              that enhances your interior's aesthetics and durability.
+              Chennai, including Kolathur, Anna Nagar, Triplicane, and Parrys.
+              We excel in delivering a wide range of finishes, from classic
+              elegance to contemporary chic, using top-quality paints and
+              innovative techniques. Our commitment to excellence ensures a
+              flawless finish that enhances your interior's aesthetics and
+              durability.
               <br />
               <br />
               Experience the perfect blend of color, texture, and craftsmanship
@@ -389,9 +394,11 @@ const Services: React.FC = () => {
               your space with precision, creativity, and unmatched expertise,
               making every wall a masterpiece.
             </p>
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/about">Know More</Link>
-            </button>
+            <Link href="/premium-painting">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Know More
+              </button>
+            </Link>
           </div>
 
           {/* Right flex box with image */}

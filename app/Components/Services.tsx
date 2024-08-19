@@ -123,17 +123,18 @@ const Services: React.FC = () => {
                 materials and smart storage solutions, making your culinary
                 space a joy to work and entertain in.
               </AccordionItem>
-              <AccordionItem title="premium Painting Services">
+              <AccordionItem title="Premium Painting Services">
                 We elevate your interiors with expert painting services, using
                 premium paints and innovative techniques. Our skilled team
                 creates stunning color palettes and finishes that transform your
                 space, enhancing its ambiance and value.
               </AccordionItem>
             </div>
-
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/services">Explore All</Link>
-            </button>
+            <Link href="/services">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Explore All
+              </button>
+            </Link>
           </div>
         </div>
       </div>

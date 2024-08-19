@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import interior from '../../public/images/home_interior_hero.png'
 import React, { useState, useEffect, SetStateAction, Dispatch } from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -42,14 +43,15 @@ const Hero = () => {
         </h1>
         <p className="text-[#545454] text-base md:text-lg lg:text-xl">
           Discover the perfect blend of timeless elegance and contemporary
-          innovation at Br Interior. We craft luxurious,
-          sophisticated living spaces that reflect your unique style. Let our
-          designers turn your home into a stunning masterpiece
-          you'll love for years to come.
+          innovation at Br Interior. We craft luxurious, sophisticated living
+          spaces that reflect your unique style. Let our designers turn your
+          home into a stunning masterpiece you'll love for years to come.
         </p>
-        <button className="w-full md:w-auto bg-[#1F1F1F] text-white text-sm md:text-base font-medium py-3 md:py-4 px-8 md:px-12 rounded hover:bg-[#444444]">
-          Start project
-        </button>
+        <Link href="/contact">
+          <button className="w-full md:w-auto bg-[#1F1F1F] text-white text-sm md:text-base font-medium py-3 md:py-4 px-8 md:px-12 rounded hover:bg-[#444444]">
+            Start project
+          </button>
+        </Link>
         <div className="w-full">
           <div className="flex flex-wrap justify-between gap-5">
             <div className="flex-1 min-w-[120px]">

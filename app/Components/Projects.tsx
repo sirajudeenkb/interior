@@ -76,9 +76,11 @@ const Projects = () => {
           sectionInView ? "animate-slide-right" : "opacity-0"
         } transition-opacity duration-500`}
       >
-        <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
-          <Link href="/projects">Explore More</Link>
-        </button>
+        <Link href="/projects">
+          <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
+            Explore More
+          </button>
+        </Link>
       </div>
       <Modal
         isOpen={modalIsOpen}

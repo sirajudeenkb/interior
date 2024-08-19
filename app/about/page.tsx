@@ -105,9 +105,11 @@ const About: React.FC = () => {
               offices, using innovative design solutions and premium materials
               to exceed your expectations.
             </p>
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/contact">Contact Us</Link>
-            </button>
+            <Link href="/contact">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -276,9 +278,11 @@ const About: React.FC = () => {
                   <p className="text-xl text-[#1F1F1F] font-semibold mb-4">
                     Still Waiting?
                   </p>
-                  <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
-                    <Link href="/contact">Contact Us</Link>
-                  </button>
+                  <Link href="/contact">
+                    <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

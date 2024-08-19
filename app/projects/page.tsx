@@ -101,19 +101,19 @@ const Projects: React.FC = () => {
                 getImageSize(index) === "large" ? "col-span-2 row-span-2" : ""
               }`}
             >
-              <Image
-                src={image.secure_url}
-                alt={image.public_id}
-                layout="responsive"
-                width={getImageSize(index) === "large" ? 400 : 200}
-                height={getImageSize(index) === "large" ? 400 : 200}
-                objectFit="cover"
-                className="transform hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "/images/fallback.jpg";
-                }}
-              />
+              <div className="aspect-w-1 aspect-h-1">
+                <Image
+                  src={image.secure_url}
+                  alt={image.public_id}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transform hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/images/fallback.jpg";
+                  }}
+                />
+              </div>
             </div>
           ))}
         </div>

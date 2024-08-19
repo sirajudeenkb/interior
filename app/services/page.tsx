@@ -8,7 +8,7 @@ import HeaderComponent from "../Components/HeaderComponent";
 import ServicesImage from "../../public/images/Services.jpg";
 import home_office_service from "../../public/images/home_offfice.png";
 import home_interior from "../../public/images/home_interior.png";
-import office_interior from "../../public/images/Office_interior.png";
+import office_interior from "../../public/images/office_interior.png";
 import modular_kitchen from "../../public/images/modular_kitchen.png";
 import modular_kitchen_services from "../../public/images/modular_kitchen_services.png";
 import painting_services from "../../public/images/painting.png";

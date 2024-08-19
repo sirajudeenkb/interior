@@ -1,6 +1,14 @@
 "use client";
+import React, {
+  useState,
+  ChangeEvent,
+  FormEvent,
+  useRef,
+  useEffect,
+} from "react";
 import Image from "next/image";
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import Swal from "sweetalert2";
 import HeaderComponent from "../Components/HeaderComponent";
 import contactImage from "../../public/images/contact.jpg";
 import email from "../../public/images/Email.jpg";
@@ -21,6 +29,28 @@ const Contact: React.FC = () => {
     message: "",
   });
 
+  const { ref: contentRef, inView: contentInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.15,
+  });
+
+  const [state, handleSubmit] = useForm("xdknaoej");
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      Swal.fire({
+        title: "Success!",
+        text: "We'll get back to you soon!",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+    }
+  }, [state.succeeded]);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -30,17 +60,6 @@ const Contact: React.FC = () => {
       [name]: value,
     }));
   };
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-  };
-
-  const { ref: contentRef, inView: contentInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.15,
-  });
 
   return (
     <>
@@ -97,7 +116,11 @@ const Contact: React.FC = () => {
               }`}
               ref={contentRef}
             >
-              <form onSubmit={handleSubmit} className="w-full max-w-md">
+              <form
+                ref={formRef}
+                onSubmit={handleSubmit}
+                className="w-full max-w-md"
+              >
                 <h2 className=" text-[#1F1F1F] text-3xl font-semibold mb-6 lg:text-center text-left">
                   Fill out the form below !
                 </h2>
@@ -118,6 +141,11 @@ const Contact: React.FC = () => {
                     className="w-full px-3 py-2 border rounded"
                     required
                   />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="block mb-2">
@@ -132,6 +160,11 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     className="w-full px-3 py-2 border rounded"
                     required
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="mb-4">
@@ -148,6 +181,11 @@ const Contact: React.FC = () => {
                     className="w-full px-3 py-2 border rounded"
                     required
                   />
+                  <ValidationError
+                    prefix="Mobile"
+                    field="mobile"
+                    errors={state.errors}
+                  />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="message" className="block mb-2">
@@ -163,10 +201,16 @@ const Contact: React.FC = () => {
                     rows={4}
                     required
                   ></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <button
                   type="submit"
                   className="w-full bg-[#1F1F1F] text-white py-2 px-4 rounded hover:bg-[#444444] transition-colors duration-200"
+                  disabled={state.submitting}
                 >
                   Send Message
                 </button>
@@ -180,4 +224,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-

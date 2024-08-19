@@ -8,12 +8,12 @@ import section from "../../public/images/section.jpg";
 const About = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const { ref: stepsRef, inView: stepsInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   return (

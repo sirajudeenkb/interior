@@ -5,9 +5,15 @@ import Services from "./Components/Services";
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <About />
-      <Services />
+      <div id="home-section">
+        <Hero />
+      </div>
+      <div id="about-section">
+        <About />
+      </div>
+      <div id="services-section">
+        <Services />
+      </div>
     </div>
   );
 }

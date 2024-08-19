@@ -40,12 +40,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
 const Services: React.FC = () => {
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const { ref: contentRef, inView: contentInView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   return (

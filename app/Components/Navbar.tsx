@@ -6,8 +6,8 @@ import Menu from "../../public/assets/Menu.svg";
 
 const navLinks = [
   { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
   { name: "About Us", path: "/about" },
+  { name: "Services", path: "/services" },
   { name: "Our Projects", path: "/projects" },
 ];
 

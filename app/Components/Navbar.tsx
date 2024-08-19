@@ -1,21 +1,25 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import Logo from "../../public/assets/Logo.svg";
+import React, { useEffect, useState, useRef } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
 
-const navLinks = [
+interface NavLink {
+  name: string;
+  path: string;
+}
+
+const navLinks: NavLink[] = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Our Projects", path: "/projects" },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +29,19 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -43,7 +60,9 @@ const Navbar = () => {
           <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold">
             Br Interior
           </span>
-          <span className="lg:hidden md:hidden sm:block">Br Interior</span>
+          <span className="lg:hidden md:hidden sm:block text-[#1F1F1F] font-medium">
+            Br Interior
+          </span>
         </div>
 
         <div className="hidden lg:flex md:flex gap-x-[50px]">
@@ -69,7 +88,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden md:hidden fixed top-[60px] left-0 w-full bg-white z-40 shadow-md">
+        <div
+          ref={menuRef}
+          className="lg:hidden md:hidden fixed left-0 w-full bg-white z-40 shadow-md"
+        >
           {navLinks.map((item, index) => (
             <Link href={item.path} key={index} legacyBehavior>
               <a

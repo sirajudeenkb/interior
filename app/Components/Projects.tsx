@@ -92,8 +92,16 @@ const Projects = () => {
         className={`flex items-center justify-center ${
           isClosing ? "modal-close" : "modal-content"
         }`}
-        overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[9999]"
         contentLabel="Project Image"
+        style={{
+          overlay: {
+            zIndex: 9999,
+          },
+          content: {
+            zIndex: 10000,
+          },
+        }}
       >
         <div className="relative">
           <button

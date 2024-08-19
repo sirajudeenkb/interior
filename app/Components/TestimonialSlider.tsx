@@ -9,25 +9,25 @@ const testimonials = [
     quote:
       "Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!",
     author: "Sophie Carter",
-    location: "New York, USA",
+    location: "Chennai, Tamil Nadu",
   },
   {
     quote:
       "Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!",
     author: "James Bennett",
-    location: "Toronto, Canada",
+    location: "Chennai, Tamil Nadu",
   },
   {
     quote:
       "Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!",
     author: "Sophie Carter",
-    location: "New York, USA",
+    location: "Chennai, Tamil Nadu",
   },
   {
     quote:
       "Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!",
     author: "James Bennett",
-    location: "Toronto, Canada",
+    location: "Chennai, Tamil Nadu",
   },
   // Add more testimonials as needed
 ];

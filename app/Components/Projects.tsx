@@ -31,10 +31,10 @@ const Projects = () => {
   };
 
   const projectImages = [
-    "/images/interior-1.jpg",
-    "/images/interior-2.jpg",
-    "/images/section.jpg",
-    "/images/About.jpg",
+    "/images/home_interior.png",
+    "/images/office_interior.png",
+    "/images/modular_kitchen.png",
+    "/images/painting_services.png",
   ];
 
   return (

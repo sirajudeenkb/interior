@@ -17,7 +17,7 @@ const MiniCard: React.FC<MiniCardProps> = ({
         <Image
           src={imageUrl}
           alt={title}
-          className="w-full h-40 object-cover"
+          className="w-full h-48 object-cover"
           width={300}
           height={200}
         />

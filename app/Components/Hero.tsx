@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import interior from '../../public/images/interior-1.jpg'
+import interior from '../../public/images/home_interior_hero.png'
 import React, { useState, useEffect, SetStateAction, Dispatch } from 'react';
 
 const Hero = () => {

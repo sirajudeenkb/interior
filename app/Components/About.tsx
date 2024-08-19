@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
-import interior from "../../public/images/interior-2.jpg";
-import section from "../../public/images/section.jpg";
+import recliner_design from "../../public/images/recliner_design_about.jpg";
+import sofa_design from "../../public/images/sofa_design_about.jpg";
 import Link from "next/link";
 
 const About = () => {
@@ -35,7 +35,7 @@ const About = () => {
               }`}
             >
               <Image
-                src={interior}
+                src={recliner_design}
                 alt="About Us"
                 layout="fill"
                 className="object-cover transition-transform duration-300 hover:scale-105"
@@ -160,7 +160,7 @@ const About = () => {
               }`}
             >
               <Image
-                src={section}
+                src={sofa_design}
                 alt="About Us"
                 layout="fill"
                 className="object-cover transition-transform duration-300 hover:scale-105"

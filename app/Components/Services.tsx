@@ -1,8 +1,7 @@
 "use client";
-
 import React, { useState } from "react";
 import Image from "next/image";
-import interior from "../../public/images/interior-2.jpg";
+import interior from "../../public/images/services_provided.png";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
@@ -17,7 +16,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
   return (
     <div className="border-b border-gray-300">
       <button
-        className="flex justify-between w-full px-4 py-4 text-left font-semibold text-black hover:bg-gray-100 focus:outline-none transition-colors duration-200"
+        className="flex justify-between w-full px-4 py-5 text-left font-semibold text-black hover:bg-gray-100 focus:outline-none transition-colors duration-200"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{title}</span>
@@ -65,26 +64,28 @@ const Services: React.FC = () => {
         </h1>
       </div>
       <div className="container mx-auto mt-8 md:mt-12 lg:mt-16">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-7 lg:gap-16">
           <div
             className={`w-full lg:w-1/2 transition-opacity duration-[2500ms] ${
               contentInView ? "animate-slide-right opacity-100" : "opacity-0"
             }`}
             ref={contentRef}
           >
-            <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
+            <div className="relative w-full rounded-lg overflow-hidden">
               <Image
                 src={interior}
                 alt="Interior Design Services"
-                layout="fill"
-                objectFit="cover"
+                layout="responsive"
+                width={200} // adjust this to the actual width of your image
+                height={200} // adjust this to the actual height of your image
+                objectFit="contain"
                 className="transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
 
           <div
-            className={`w-full lg:w-1/2 flex flex-col justify-between gap-y-6 transition-opacity duration-[2500ms] ${
+            className={`w-full lg:w-1/2 flex flex-col justify-between gap-y-[30px] transition-opacity duration-[2500ms] ${
               contentInView ? "animate-slide-left opacity-100" : "opacity-0"
             }`}
             ref={contentRef}
@@ -93,14 +94,21 @@ const Services: React.FC = () => {
               Designing Your Dream with Brilliance
             </h2>
 
-            <p className="text-base md:text-lg text-[#545454]">
+            <p className="text-base md:text-lg text-[#545454] py-2">
               At Narasimha Interior Decorators, we take pride in transforming
               spaces into stunning living environments. As the top interior
               decorators we bring your vision to life with creativity,
-              precision, and expertise.
+              precision, and expertise. As the top interior decorators we bring
+              your vision to life with creativity, precision, and expertise.
+              your vision to life with creativity, precision, and expertise.
+              
             </p>
 
-            <div className="w-full space-y-2">
+            <div className="w-full">
+              <AccordionItem title="Home & Office Interior">
+                We specialize in creating warm and inviting living spaces that
+                reflect your personal style and maximize comfort.
+              </AccordionItem>
               <AccordionItem title="Home & Office Interior">
                 We specialize in creating warm and inviting living spaces that
                 reflect your personal style and maximize comfort.

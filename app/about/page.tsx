@@ -7,6 +7,7 @@ import mission from "../../public/images/mission.jpg";
 import vision from "../../public/images/vision.jpg";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 
 const About: React.FC = () => {
@@ -34,8 +35,28 @@ const About: React.FC = () => {
         description="Learn more about our mission and values."
       />
       {/* Rest of the About page content */}
-      <div className=" p-8 md:p-12 lg:p-16 ">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start">
+      <div className="relative p-8 md:p-12 lg:p-16">
+        <div className="absolute inset-0 z-0 opacity-10">
+          <svg
+            id="visual"
+            viewBox="0 0 1577 620"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <rect x="0" y="0" width="1577" height="620" fill="#ffffff"></rect>
+            <g transform="translate(1572.1682739191738 484.46670565966974)">
+              <path
+                d="M380.4 -441.8C511.7 -343.2 649.8 -241 692.1 -106.4C734.5 28.2 681.2 195.4 602.4 362.8C523.6 530.2 419.3 697.8 248.4 819.5C77.5 941.1 -160.1 1016.7 -308.3 927.8C-456.5 838.8 -515.3 585.1 -575.6 380.8C-635.9 176.4 -697.6 21.2 -697.4 -147.9C-697.3 -317 -635.3 -500.2 -508.8 -599.7C-382.2 -699.2 -191.1 -715.1 -33.3 -675.4C124.5 -635.8 249.1 -540.5 380.4 -441.8"
+                fill="#ffa48f"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
             <div
               ref={aboutRef}
@@ -78,58 +99,86 @@ const About: React.FC = () => {
               Keelkattalai, Pallikaranai, OMR, ECR, and Chennai, we bring your
               vision to life with creativity, precision, and expertise.
             </p>
+            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
+              <Link href="/contact">Contact Us</Link>
+            </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-12 lg:gap-16 max-w-full py-12 px-4 sm:px-8 md:px-12 lg:px-12">
-        <div
-          ref={missionRef}
-          className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0 transition-opacity duration-[2500ms] ${
-            missionInView ? "animate-slide-right opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={mission}
-            width={450}
-            height={450}
-            alt="Our Mission"
-            className="mb-7 w-full max-w-[450px] h-auto"
-          />
-          <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
-            Our Mission
-          </h2>
-          <p className="text-justify max-w-md mx-auto text-[#545454]">
-            Driven by a passion for creativity and customer satisfaction, our
-            mission is to surpass expectations by delivering exceptional
-            interior design services tailored to the unique needs and
-            preferences of each client, ensuring their spaces reflect timeless
-            elegance and functional brilliance.
-          </p>
+
+      <div className="relative overflow-hidden">
+        {/* SVG Blob Background */}
+        <div className="absolute inset-0 z-0 opacity-10">
+          <svg
+            id="visual"
+            viewBox="0 0 1577 620"
+            width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <rect x="0" y="0" width="1577" height="620" fill="#ffffff"></rect>
+            <g transform="translate(10.620645511858868 -100.73077222131315)">
+              <path
+                d="M359 -453.4C468.7 -335.9 563.3 -225.9 654.9 -62.7C746.6 100.5 835.3 317 795.3 527.6C755.2 738.1 586.4 942.7 405.9 926.7C225.4 910.6 33.2 673.8 -215.4 585.9C-464 498 -768.9 559 -818.7 472.7C-868.6 386.4 -663.3 152.8 -567.8 -50.1C-472.4 -253 -486.9 -425.3 -410.6 -548.6C-334.2 -672 -167.1 -746.5 -21.2 -721.2C124.7 -695.9 249.4 -570.9 359 -453.4"
+                fill="#ffa48f"
+              ></path>
+            </g>
+          </svg>
         </div>
 
-        <div
-          ref={visionRef}
-          className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 transition-opacity duration-[2500ms] ${
-            visionInView ? "animate-slide-left opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={vision}
-            width={450}
-            height={450}
-            alt="Our Vision"
-            className="mb-7 w-full max-w-[450px] h-auto"
-          />
-          <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
-            Our Vision
-          </h2>
-          <p className="text-justify max-w-md mx-auto text-[#545454]">
-            Our vision at Narasimha Interior Decorators is to become the premier
-            destination for innovative and sustainable interior design solutions
-            in Madipakkam, Chennai, and the surrounding areas, setting new
-            standards of excellence in the industry. Narasimha – The Top
-            Interior Decorators
-          </p>
+        {/* Content */}
+        <div className="relative z-10 flex flex-col md:flex-row justify-center gap-8 md:gap-12 lg:gap-16 max-w-full py-12 px-4 sm:px-8 md:px-12 lg:px-12">
+          <div
+            ref={missionRef}
+            className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0 transition-opacity duration-[2500ms] ${
+              missionInView ? "animate-slide-right opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={mission}
+              width={450}
+              height={450}
+              alt="Our Mission"
+              className="mb-7 w-full max-w-[450px] h-auto transition-transform duration-300 hover:scale-105"
+            />
+            <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
+              Our Mission
+            </h2>
+            <p className="text-justify max-w-md mx-auto text-[#545454] ">
+              Driven by a passion for creativity and customer satisfaction, our
+              mission is to surpass expectations by delivering exceptional
+              interior design services tailored to the unique needs and
+              preferences of each client, ensuring their spaces reflect timeless
+              elegance and functional brilliance.
+            </p>
+          </div>
+
+          <div
+            ref={visionRef}
+            className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 transition-opacity duration-[2500ms] ${
+              visionInView ? "animate-slide-left opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={vision}
+              width={450}
+              height={450}
+              alt="Our Vision"
+              className="mb-7 w-full max-w-[450px] h-auto transition-transform duration-300 hover:scale-105"
+            />
+            <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
+              Our Vision
+            </h2>
+            <p className="text-justify max-w-md mx-auto text-[#545454]">
+              Our vision at Narasimha Interior Decorators is to become the
+              premier destination for innovative and sustainable interior design
+              solutions in Madipakkam, Chennai, and the surrounding areas,
+              setting new standards of excellence in the industry. Narasimha –
+              The Top Interior Decorators
+            </p>
+          </div>
         </div>
       </div>
     </div>

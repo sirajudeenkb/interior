@@ -110,10 +110,13 @@ const Projects = () => {
           >
             <FaTimes size={20} />
           </button>
-          <img
+          <Image
             src={selectedImage}
             alt="Selected Project"
+            width={1000}
+            height={1000}
             className="max-h-screen max-w-screen"
+            objectFit="contain"
           />
         </div>
       </Modal>

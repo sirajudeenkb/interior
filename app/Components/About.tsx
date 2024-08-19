@@ -99,9 +99,11 @@ const About = () => {
               </h2>
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src="/assets/Step1.svg"
                     alt="Start Project Icon"
+                    width={0}
+                    height={0}
                     className="w-12 h-12"
                   />
                 </div>
@@ -118,9 +120,11 @@ const About = () => {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src="/assets/Step2.svg"
-                    alt="Craft Icon"
+                    alt="Start Project Icon"
+                    width={0}
+                    height={0}
                     className="w-12 h-12"
                   />
                 </div>
@@ -130,14 +134,17 @@ const About = () => {
                   </h3>
                   <p className="text-[#545454] text-sm sm:text-base md:text-lg text-justify">
                     Collaborate with our skilled team to refine and perfect your
-                    design. We ensure every detail reflects your style and needs.
+                    design. We ensure every detail reflects your style and
+                    needs.
                   </p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <img
+                  <Image
                     src="/assets/Step3.svg"
+                    width={0}
+                    height={0}
                     alt="Execute Icon"
                     className="w-12 h-12"
                   />

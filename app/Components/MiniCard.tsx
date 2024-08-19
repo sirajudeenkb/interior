@@ -12,7 +12,7 @@ const MiniCard: React.FC<MiniCardProps> = ({
   description,
 }) => {
   return (
-    <div className="max-w-xs w-full rounded-md overflow-hidden shadow-xl border border-gray-200 p-4 bg-white m-4">
+    <div className="max-w-xs w-full rounded-md overflow-hidden shadow-xl border border-gray-200 p-4 bg-white m-4 transform transition-transform duration-300 hover:scale-105">
       <div className="flex justify-center">
         <Image
           src={imageUrl}
@@ -23,10 +23,10 @@ const MiniCard: React.FC<MiniCardProps> = ({
         />
       </div>
       <div className="px-1 py-4">
-        <div className="font-bold text-lg mb-2 text-center text-orange-500">
+        <div className="font-semibold text-lg mb-2 text-center text-[#1F1F1F]">
           {title}
         </div>
-        <p className="text-gray-700 text-[15px] text-justify">{description}</p>
+        <p className="text-[#545454] text-[15px] text-justify">{description}</p>
       </div>
     </div>
   );

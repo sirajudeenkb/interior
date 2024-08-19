@@ -3,29 +3,30 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Quote from "../../public/assets/Quote.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const testimonials = [
   {
     quote:
-      "Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!",
+      "Working with Br Interior was easy and stress-free. They handled everything from start to finish, and the result is better than we imagined. Our home feels put-together and stylish.",
     author: "Sophie Carter",
     location: "Chennai, Tamil Nadu",
   },
   {
     quote:
-      "Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!",
-    author: "James Bennett",
+      "We hired Br Interior to redo our kitchen. They came up with modular kitchen designs that worked for our family. Timely delivery and fully satisfied with their work",
+    author: "Anjum Khan",
     location: "Chennai, Tamil Nadu",
   },
   {
     quote:
-      "Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!",
+      "I was clueless about decorating my new apartment. Br Interior helped me pick colors and furniture that fit my style.",
     author: "Sophie Carter",
     location: "Chennai, Tamil Nadu",
   },
   {
     quote:
-      "Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!",
+      "Br Interior gave me a designer look on a DIY budget. Everything they did looks great and built to last. They made it happen!",
     author: "James Bennett",
     location: "Chennai, Tamil Nadu",
   },
@@ -80,9 +81,11 @@ const TestimonialSlider = () => {
               Our clients' satisfaction is our top priority. Here's what they
               have to say about their experiences with our services.
             </p>
-            <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
-              Share Your Experience
-            </button>
+            <Link href="https://forms.gle/VTamnwfpdwr5UTDt7" target="_blank">
+              <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
+                Share Your Experience
+              </button>
+            </Link>
           </div>
         </div>
         <div className="lg:w-2/3" ref={sectionRef}>

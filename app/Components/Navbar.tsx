@@ -57,12 +57,14 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div>
-          <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold">
-            Br Interior
-          </span>
-          <span className="lg:hidden md:hidden sm:block text-[#1F1F1F] font-medium">
-            Br Interior
-          </span>
+          <Link href="/">
+            <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold cursor-pointer">
+              Br Interior
+            </span>
+            <span className="lg:hidden md:hidden sm:block text-[#1F1F1F] font-medium cursor-pointer">
+              Br Interior
+            </span>
+          </Link>
         </div>
 
         <div className="hidden lg:flex md:flex gap-x-[50px]">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
@@ -26,8 +26,8 @@ const About = () => {
       </div>
       <div
         ref={aboutRef}
-        className={`container mx-auto py-8 md:py-12 lg:py-16 transition-opacity duration-[1000ms] ${
-          aboutInView ? "opacity-100" : "opacity-0"
+        className={`container mx-auto py-8 md:py-12 lg:py-16 transition-opacity duration-[2500ms] ${
+          aboutInView ? "animate-slide-right opacity-100" : " opacity-0"
         }`}
       >
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
@@ -77,8 +77,8 @@ const About = () => {
       {/* Steps Section */}
       <div
         ref={stepsRef}
-        className={`container mx-auto pt-4 md:pt-12 lg:pt-16 transition-opacity duration-[1000ms] ${
-          stepsInView ? "opacity-100" : "opacity-0"
+        className={`container mx-auto pt-4 md:pt-12 lg:pt-16 transition-opacity overflow-hidden overflow-x-hidden duration-[2500ms] ${
+          stepsInView ? "animate-slide-left opacity-100" : " opacity-0"
         }`}
       >
         <div className="flex flex-col lg:flex-row items-stretch">

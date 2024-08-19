@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <>
-      <div className=" bg-[#1F1F1F] text-white py-8">
+      <div className="bg-[#1F1F1F] text-white py-8">
         <div className="w-full flex md:flex-row flex-col justify-around items-start">
           <div className="p-5">
             <ul>
@@ -63,27 +63,27 @@ function Footer() {
           </div>
           <div className="p-5">
             <ul>
-              <p className=" font-semibold  text-2xl mb-5">Quick Links</p>
+              <p className="font-semibold text-2xl mb-5">Quick Links</p>
               <li
-                className=" text-md pb-2 mb-2 font-light hover:underline cursor-pointer"
+                className="text-md pb-2 mb-2 font-light hover:underline cursor-pointer"
                 onClick={() => handleNavLinkClick("home-section")}
               >
                 Home
               </li>
               <li
-                className=" text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
+                className="text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
                 onClick={() => handleNavLinkClick("about-section")}
               >
                 About Us
               </li>
               <li
-                className=" text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
+                className="text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
                 onClick={() => handleNavLinkClick("services-section")}
               >
                 Services
               </li>
               <li
-                className=" text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
+                className="text-md mb-2 pb-2 font-light hover:underline cursor-pointer"
                 onClick={() => handleNavLinkClick("projects-section")}
               >
                 Our Projects
@@ -91,33 +91,45 @@ function Footer() {
             </ul>
           </div>
           <div className="p-5">
-            <p className=" font-semibold text-2xl mb-5">Our Services</p>
-            <p className=" text-base pb-2 mb-2 font-light hover:underline ">
+            <p className="font-semibold text-2xl mb-5">Our Services</p>
+            <p className="text-base pb-2 mb-2 font-light hover:underline">
               <a href="/services#home-office"> Home & Office Interior</a>
             </p>
-            <p className=" text-base pb-2 mb-2 font-light hover:underline ">
+            <p className="text-base pb-2 mb-2 font-light hover:underline">
               <a href="/services#modular-kitchen"> Modular Kitchen</a>
             </p>
-            <p className=" text-base pb-2 mb-2 font-light hover:underline ">
+            <p className="text-base pb-2 mb-2 font-light hover:underline">
               <a href="/services#painting-services"> Painting Services</a>
             </p>
-            <p className=" text-base pb-2 mb-2 font-light hover:underline ">
+            <p className="text-base pb-2 mb-2 font-light hover:underline">
               <a href="/services#other-services"> Other Services</a>
             </p>
           </div>
           <div className="p-5">
-            <p className=" font-semibold text-2xl mb-5">Contact Us</p>
-            <p className=" text-md pb-2 font-light cursor-pointer">
-              <span className=" font-medium  ">Phone :</span>{" "}
-              <span className=" hover:underline"> +91 9884814786</span>
+            <p className="font-semibold text-2xl mb-5">Contact Us</p>
+            <p className="text-md pb-2 font-light cursor-pointer">
+              <span className="font-medium">Phone :</span>{" "}
+              <span className="hover:underline"> +91 9884814786</span>
               <span> | </span>
-              <span className=" hover:underline"> +91 9884814060</span>
+              <span className="hover:underline"> +91 9884814060</span>
             </p>
-            <p className=" text-md pb-2 font-light cursor-pointer">
-              <span className=" font-medium  ">Email :</span>{" "}
-              <span className=" hover:underline">brinterior.in@gmail.com</span>
+            <p className="text-md pb-2 font-light cursor-pointer">
+              <span className="font-medium">Email :</span>{" "}
+              <span className="hover:underline">brinterior.in@gmail.com</span>
             </p>
           </div>
+        </div>
+        <div className="text-center">
+          <p>
+            <a
+              href="https://www.freepik.com/author/stories"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Images by storyset on Freepik
+            </a>
+          </p>
         </div>
       </div>
     </>

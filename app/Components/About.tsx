@@ -1,27 +1,38 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 import interior from "../../public/images/interior-2.jpg";
 import section from "../../public/images/section.jpg";
 
-
-
 const About = () => {
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: stepsRef, inView: stepsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div className="px-6 md:px-12 lg:px-24 lg:pt-24 pt-8 md:pt-16">
       <div className="flex items-center animate-slide-right">
         <div className="w-10 md:w-12 lg:w-16 lg:border-t-4 md:border-t-2 border-t border-[#1F1F1F] mr-5"></div>
-        <h1 className="text-xl text-[#1F1F1F] lg:text-5xl md:text-3xl font-semibold ">
+        <h1 className="text-xl text-[#1F1F1F] lg:text-5xl md:text-3xl font-semibold">
           About Us
         </h1>
       </div>
-      <div className="container mx-auto py-8 md:py-12 lg:py-16">
+      <div
+        ref={aboutRef}
+        className={`container mx-auto py-8 md:py-12 lg:py-16 transition-opacity duration-[1000ms] ${
+          aboutInView ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
-          {/* Left container for the image */}
-
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10 ">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
             <div className="relative w-full pb-[75%]">
-              {" "}
-              {/* 4:3 aspect ratio */}
               <Image
                 src={interior}
                 alt="About Us"
@@ -31,8 +42,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right container for text content */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-start ">
+          <div className="w-full lg:w-1/2 flex flex-col justify-start">
             <div className="text-center lg:text-left mb-6">
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-left text-[#1F1F1F]">
                 Welcome to
@@ -63,8 +73,14 @@ const About = () => {
           </div>
         </div>
       </div>
+
       {/* Steps Section */}
-      <div className="container mx-auto py-4 md:py-12 lg:py-16">
+      <div
+        ref={stepsRef}
+        className={`container mx-auto pt-4 md:pt-12 lg:pt-16 transition-opacity duration-[1000ms] ${
+          stepsInView ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className="flex flex-col lg:flex-row items-stretch">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between">
             <div className="space-y-10">

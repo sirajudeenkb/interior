@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../public/assets/Logo.svg";
 import Menu from "../../public/assets/Menu.svg";
 
@@ -12,8 +13,25 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex w-full items-center justify-between px-[20px] py-[15px] lg:container lg:mx-auto lg:px-20">
+    <nav
+      className={`sticky top-0 flex w-full items-center justify-between px-[20px] py-[15px] bg-white lg:mx-auto lg:px-20 z-50 transition-shadow duration-300 ${
+        isScrolled ? "shadow-md" : ""
+      }`}
+    >
       <div>
         <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold">
           Br Interior

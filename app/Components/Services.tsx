@@ -85,41 +85,49 @@ const Services: React.FC = () => {
           </div>
 
           <div
-            className={`w-full lg:w-1/2 flex flex-col justify-between gap-y-[30px] transition-opacity duration-[2500ms] ${
+            className={`w-full lg:w-1/2 flex flex-col justify-between gap-y-[22px] transition-opacity duration-[2500ms] ${
               contentInView ? "animate-slide-left opacity-100" : "opacity-0"
             }`}
             ref={contentRef}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#1F1F1F] text-center lg:text-left">
-              Designing Your Dream with Brilliance
+              Crafting Luxurious Spaces with Expert Interior Design
             </h2>
 
             <p className="text-base md:text-lg text-[#545454] py-2">
-              At Narasimha Interior Decorators, we take pride in transforming
-              spaces into stunning living environments. As the top interior
-              decorators we bring your vision to life with creativity,
-              precision, and expertise. As the top interior decorators we bring
-              your vision to life with creativity, precision, and expertise.
-              your vision to life with creativity, precision, and expertise.
-              
+              At Br Interior, we excel in transforming ordinary spaces into
+              extraordinary living environments. We bring visions to life with
+              unparalleled creativity and precision. From elegant homes, premium
+              paintings to sleek offices and cutting-edge modular kitchens, we
+              craft bespoke designs that blend luxury, functionality, and your
+              unique style. Experience the Br Interior difference – where
+              innovation meets timeless sophistication in every project.
             </p>
 
             <div className="w-full">
-              <AccordionItem title="Home & Office Interior">
+              <AccordionItem title="Home Interior">
                 We specialize in creating warm and inviting living spaces that
-                reflect your personal style and maximize comfort.
+                reflect your personal style and maximize comfort. Our expert
+                designers transform houses into luxurious homes, tailoring every
+                detail to your unique tastes and lifestyle.
               </AccordionItem>
-              <AccordionItem title="Home & Office Interior">
-                We specialize in creating warm and inviting living spaces that
-                reflect your personal style and maximize comfort.
+              <AccordionItem title="Office Interior">
+                We design sleek, functional office spaces that boost
+                productivity and impress clients. From ergonomic layouts to
+                stylish decor, we create professional environments that inspire
+                success and reflect your brand's identity.
               </AccordionItem>
               <AccordionItem title="Modular Kitchen Services">
-                Our team designs functional and inspiring work environments that
-                boost productivity and impress clients.
+                Our cutting-edge modular kitchen designs blend form and function
+                seamlessly. We craft efficient, beautiful kitchens with premium
+                materials and smart storage solutions, making your culinary
+                space a joy to work and entertain in.
               </AccordionItem>
-              <AccordionItem title="Professional Painting Services">
-                We offer expert painting services to transform your space with a
-                fresh, vibrant look using high-quality paints and techniques.
+              <AccordionItem title="premium Painting Services">
+                We elevate your interiors with expert painting services, using
+                premium paints and innovative techniques. Our skilled team
+                creates stunning color palettes and finishes that transform your
+                space, enhancing its ambiance and value.
               </AccordionItem>
             </div>
 

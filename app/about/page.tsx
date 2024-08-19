@@ -15,6 +15,16 @@ const About: React.FC = () => {
      triggerOnce: true,
      threshold: 0.2,
    });
+
+   const { ref: missionRef, inView: missionInView } = useInView({
+     triggerOnce: true,
+     threshold: 0.2,
+   });
+
+   const { ref: visionRef, inView: visionInView } = useInView({
+     triggerOnce: true,
+     threshold: 0.2,
+   });
    
   return (
     <div>
@@ -71,19 +81,24 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-x-16 max-w-full pb-12">
-        <div className="flex flex-col items-center lg:w-2/5 px-8 mb-12 lg:mb-0">
+      <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-12 lg:gap-16 max-w-full py-12 px-4 sm:px-8 md:px-12 lg:px-12">
+        <div
+          ref={missionRef}
+          className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 mb-12 md:mb-0 transition-opacity duration-[2500ms] ${
+            missionInView ? "animate-slide-right opacity-100" : "opacity-0"
+          }`}
+        >
           <Image
             src={mission}
             width={450}
             height={450}
             alt="Our Mission"
-            className="mb-7"
+            className="mb-7 w-full max-w-[450px] h-auto"
           />
           <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
             Our Mission
           </h2>
-          <p className="text-justify max-w-md text-[#545454]">
+          <p className="text-justify max-w-md mx-auto text-[#545454]">
             Driven by a passion for creativity and customer satisfaction, our
             mission is to surpass expectations by delivering exceptional
             interior design services tailored to the unique needs and
@@ -92,16 +107,23 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center lg:w-2/5 px-8">
+        <div
+          ref={visionRef}
+          className={`flex flex-col items-center w-full md:w-1/2 lg:w-2/5 transition-opacity duration-[2500ms] ${
+            visionInView ? "animate-slide-left opacity-100" : "opacity-0"
+          }`}
+        >
           <Image
             src={vision}
             width={450}
             height={450}
             alt="Our Vision"
-            className="mb-7"
+            className="mb-7 w-full max-w-[450px] h-auto"
           />
-          <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">Our Vision</h2>
-          <p className="text-justify max-w-md text-[#545454]">
+          <h2 className="font-semibold text-3xl mb-4 text-[#1F1F1F]">
+            Our Vision
+          </h2>
+          <p className="text-justify max-w-md mx-auto text-[#545454]">
             Our vision at Narasimha Interior Decorators is to become the premier
             destination for innovative and sustainable interior design solutions
             in Madipakkam, Chennai, and the surrounding areas, setting new

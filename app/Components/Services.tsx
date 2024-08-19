@@ -51,7 +51,7 @@ const Services: React.FC = () => {
 
   return (
     <section
-      className="px-6 md:px-12 lg:px-24 py-16 lg:py-24 overflow-x-hidden"
+      className="px-6 md:px-12 lg:px-24 pt-16 lg:pt-24 overflow-x-hidden"
       ref={sectionRef}
     >
       <div

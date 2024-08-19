@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="p-5">
-            <p className="font-semibold text-2xl mb-5">Contact Us</p>
+            <p className="font-semibold text-2xl mb-2">Contact Us</p>
             <p className="text-md pb-2 font-light">
               <span className="font-medium">Phone :</span>{" "}
               <a href="tel:+919884814786" className="hover:underline">
@@ -125,6 +125,12 @@ const Footer: React.FC = () => {
               >
                 brinterior.in@gmail.com
               </a>
+            </p>
+            <p className="font-semibold text-2xl mb-2 mt-2">Office</p>
+            <p className="text-base pb-2 font-light">
+              125/257, Canara Bank Building, Angappa Naicken Street,
+              <br />
+              Parrys, Chennai, Tamil Nadu 600001
             </p>
           </div>
         </div>

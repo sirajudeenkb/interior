@@ -35,7 +35,7 @@ const Hero = () => {
 };
 
   return (
-    <div className="p-6 md:p-12 lg:p-24 flex flex-col-reverse md:flex-row overflow-hidden">
+    <div className="px-6 md:px-12 lg:px-24 lg:pt-24 pt-6 md:pt-12 flex flex-col-reverse md:flex-row overflow-hidden">
       <div className="flex-1 flex flex-col items-start space-y-6 md:space-y-8 lg:space-y-10 md:mr-8 mt-6 md:mt-0 animate-slide-right">
         <h1 className="font-medium text-5xl md:text-7xl lg:text-8xl text-[#1F1F1F]">
           Interior Design

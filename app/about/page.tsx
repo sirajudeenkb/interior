@@ -41,7 +41,7 @@ const About: React.FC = () => {
         description="Learn more about our mission and values."
       />
       {/* Rest of the About page content */}
-      <div className="relative p-8 md:p-12 lg:p-16">
+      <div className="relative p-8 md:p-12 lg:p-24">
         <div className="absolute inset-0 z-0 opacity-10">
           <svg
             id="visual"
@@ -62,7 +62,7 @@ const About: React.FC = () => {
           </svg>
         </div>
 
-        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
+        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-8">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
             <div
               ref={aboutRef}
@@ -90,7 +90,7 @@ const About: React.FC = () => {
                 Br Interior Decorators
               </h2>
             </div>
-            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454]">
+            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
               Narasimha about Decorators is your go-to choice for top and Budget
               about design services in Madipakkam & All over Chennai Established
               in 2016. Specializing in home and office transformations, we excel
@@ -187,7 +187,8 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="relative p-8 md:p-12 lg:p-28">
+
+      <div className="relative p-8 md:p-12 lg:p-24">
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <svg
             id="visual"
@@ -209,10 +210,10 @@ const About: React.FC = () => {
           </svg>
         </div>
         <div className="relative z-10 container mx-auto">
-          <div className="flex flex-col lg:flex-row items-stretch">
+          <div className="flex flex-col lg:flex-row justify-between gap-8">
             <div
               ref={stepsRef}
-              className={`w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between transition-opacity duration-[2500ms] ${
+              className={`w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between  transition-opacity duration-[2500ms] ${
                 stepsInView ? "animate-slide-right opacity-100" : "opacity-0"
               }`}
             >
@@ -223,7 +224,7 @@ const About: React.FC = () => {
                 <p className="text-lg md:text-xl text-left text-[#1F1F1F] mb-8">
                   Discover the Top 5 Reasons to Partner with Us!
                 </p>
-                <ul className="list-decimal ml-4 space-y-4 text-[#1F1F1F]">
+                <ul className="list-decimal ml-4 space-y-4 text-[#1F1F1F] text-justify">
                   <li>
                     <span className="font-bold">Expertise:</span>
                     <span className="text-[#545454]">
@@ -286,11 +287,11 @@ const About: React.FC = () => {
                 stepsInView ? "animate-slide-left opacity-100" : "opacity-0"
               }`}
             >
-              <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
+              <div className="relative w-full rounded-lg overflow-hidden">
                 <Image
                   src={section}
                   alt="About Us"
-                  layout="fill"
+                  layout="fit"
                   objectFit="cover"
                   className="transition-transform duration-300 hover:scale-105"
                 />

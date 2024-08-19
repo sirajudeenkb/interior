@@ -39,7 +39,7 @@ const Services: React.FC = () => {
       {/* Rest of the Services page content */}
 
       {/* 1st section */}
-      <div className="relative container mx-auto px-8 md:px-12 lg:px-16 pt-8 md:pt-12 lg:pt-16">
+      <div className="relative p-6 md:p-12 lg:p-24">
         <div className="absolute inset-0 z-0 opacity-10">
           <svg
             id="visual"
@@ -145,7 +145,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Right flex box with image */}
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pl-10">
             <div
               ref={section_oneRef}
               className={`relative w-full pb-[75%] rounded-lg overflow-hidden transition-opacity duration-[2500ms] ${
@@ -166,7 +166,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* 2nd section */}
-      <div className=" relative px-8 md:px-12 lg:px-16 pt-8 md:pt-12 lg:pt-16  flex flex-col items-center gap-y-5">
+      <div className=" relative p-6 md:p-12 lg:p-16  flex flex-col items-center gap-y-5">
         <div className="absolute inset-0 z-0 opacity-10">
           <svg
             id="visual"
@@ -203,11 +203,11 @@ const Services: React.FC = () => {
           </div>
         </div>
         {/* Cards  */}
-        <div ref={section_twoRef}>
+        <div ref={section_twoRef }>
           <div
             className={`flex flex-wrap justify-center mt-2 ${
               section_twoInView ? "animate-slide-up" : "opacity-0"
-            } transition-opacity duration-500 `}
+            } transition-opacity duration-500 relative`}
           >
             <MiniCard
               imageUrl="/images/contact.jpg"
@@ -235,14 +235,14 @@ const Services: React.FC = () => {
         <button
           className={`bg-[#1F1F1F] text-white text-sm font-semibold py-3 px-6 rounded hover:bg-[#444444] mt-4 ${
             section_twoInView ? "animate-slide-up" : "opacity-0"
-          } transition-opacity duration-500`}
+          } transition-opacity duration-500 relative `}
         >
           <Link href="/contact">Contact Us</Link>
         </button>
       </div>
 
       {/* 3rd section */}
-      <div className=" relative container mx-auto px-8 md:px-12 lg:px-16 pt-8 md:pt-12 lg:pt-16">
+      <div className=" relative p-6 md:p-12 lg:p-24 ">
         <div className="absolute inset-0 z-0 opacity-10">
           <svg
             id="visual"
@@ -262,7 +262,7 @@ const Services: React.FC = () => {
             </g>
           </svg>
         </div>
-        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start">
+        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-8">
           {/* Left flex box with image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
             <div
@@ -323,7 +323,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* 4th section */}
-      <div className=" relative container mx-auto p-8 md:p-12 lg:p-16 ">
+      <div className=" relative p-6 md:p-12 lg:p-24 ">
         <div className="absolute inset-0 z-0 opacity-10">
           <svg
             id="visual"
@@ -383,7 +383,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Right flex box with image */}
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pl-10">
             <div
               ref={section_fourRef}
               className={`relative w-full pb-[75%] rounded-lg overflow-hidden transition-opacity duration-[2500ms] ${

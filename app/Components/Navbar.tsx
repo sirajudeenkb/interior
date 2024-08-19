@@ -1,13 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Logo from "../../public/assets/Logo.svg";
 import Menu from "../../public/assets/Menu.svg";
 
 const navLinks = [
-  { name: "Home" },
-  { name: "About Us" },
-  { name: "Services" },
-  { name: "Our Projects" },
+  { name: "Home", path: "/" },
+  { name: "Services", path: "/services" },
+  { name: "About Us", path: "/about" },
+  { name: "Our Projects", path: "/projects" },
 ];
 
 const Navbar = () => {
@@ -22,9 +23,9 @@ const Navbar = () => {
 
       <div className="hidden lg:flex md:flex gap-x-[50px]">
         {navLinks.map((item, index) => (
-          <p className="text-[#1F1F1F] font-medium" key={index}>
-            {item.name}
-          </p>
+          <Link href={item.path} key={index} legacyBehavior>
+            <a className="text-[#1F1F1F] font-medium">{item.name}</a>
+          </Link>
         ))}
       </div>
 

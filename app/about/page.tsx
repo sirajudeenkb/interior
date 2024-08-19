@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import HeaderComponent from "../Components/HeaderComponent";
 import AboutImage from "../../public/images/About.jpg"; // Ensure the image path is correct
@@ -10,29 +10,27 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
-
 const About: React.FC = () => {
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-   const { ref: aboutRef, inView: aboutInView } = useInView({
-     triggerOnce: true,
-     threshold: 0.2,
-   });
+  const { ref: missionRef, inView: missionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-   const { ref: missionRef, inView: missionInView } = useInView({
-     triggerOnce: true,
-     threshold: 0.2,
-   });
+  const { ref: visionRef, inView: visionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-   const { ref: visionRef, inView: visionInView } = useInView({
-     triggerOnce: true,
-     threshold: 0.2,
-   });
+  const { ref: stepsRef, inView: stepsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
-   const { ref: stepsRef, inView: stepsInView } = useInView({
-     triggerOnce: true,
-     threshold: 0.2,
-   });
-   
   return (
     <div>
       <HeaderComponent
@@ -91,19 +89,21 @@ const About: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
-              Narasimha about Decorators is your go-to choice for top and Budget
-              about design services in Madipakkam & All over Chennai Established
-              in 2016. Specializing in home and office transformations, we excel
-              in crafting unique designs for bedrooms, kitchens, and more. Our
-              commitment to affordability ensures quality without compromise.
-              Experience the perfect blend of comfort and aesthetics with us.
+              Br Interior is your premier choice for top-tier and
+              budget-friendly interior design services across Chennai since
+              2010. We specialize in transforming homes, offices, and commercial
+              spaces, excelling in crafting unique designs for bedrooms, modular
+              kitchens, and more. Our commitment to affordability ensures
+              uncompromised quality, delivering the perfect blend of comfort and
+              aesthetics.
               <br />
               <br />
-              At Narasimha about Decorators, we take pride in transforming
-              spaces into stunning living environments. As the top about
-              decorators in Madipakkam, Medavakkam, Nanganallur, Velachery,
-              Keelkattalai, Pallikaranai, OMR, ECR, and Chennai, we bring your
-              vision to life with creativity, precision, and expertise.
+              As leading interior designers in Chennai, including areas like
+              Perambur, Triplicane, and Parrys, we bring your vision to life
+              with creativity, precision, and expertise. We transform spaces
+              throughout the city, from residential havens to corporate offices,
+              using innovative design solutions and premium materials to exceed
+              your expectations.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
               <Link href="/contact">Contact Us</Link>
@@ -153,11 +153,11 @@ const About: React.FC = () => {
               Our Mission
             </h2>
             <p className="text-justify max-w-md mx-auto text-[#545454] ">
-              Driven by a passion for creativity and customer satisfaction, our
-              mission is to surpass expectations by delivering exceptional
-              interior design services tailored to the unique needs and
-              preferences of each client, ensuring their spaces reflect timeless
-              elegance and functional brilliance.
+              Our mission is to exceed expectations by delivering bespoke
+              interior solutions that perfectly align with each client's unique
+              vision and lifestyle. We strive to transform spaces into showcases
+              of timeless elegance and functional brilliance, ensuring every
+              project reflects our commitment to excellence in interior design.
             </p>
           </div>
 
@@ -178,11 +178,12 @@ const About: React.FC = () => {
               Our Vision
             </h2>
             <p className="text-justify max-w-md mx-auto text-[#545454]">
-              Our vision at Narasimha Interior Decorators is to become the
-              premier destination for innovative and sustainable interior design
-              solutions in Madipakkam, Chennai, and the surrounding areas,
-              setting new standards of excellence in the industry. Narasimha –
-              The Top Interior Decorators
+              Our vision is to set new industry benchmarks, becoming the go-to
+              destination for discerning clients across Chennai. We aim to
+              redefine living and working spaces through our commitment to
+              cutting-edge design.We strive to create environments that inspire,
+              elevate lifestyles, and stand as testaments to superior interior
+              artistry.
             </p>
           </div>
         </div>
@@ -226,48 +227,49 @@ const About: React.FC = () => {
                 </p>
                 <ul className="list-decimal ml-4 space-y-4 text-[#1F1F1F] text-justify">
                   <li>
-                    <span className="font-bold">Expertise:</span>
+                    <span className="font-bold">Unmatched Expertise:</span>
                     <span className="text-[#545454]">
                       {" "}
-                      Benefit from our seasoned professionals with years of
-                      industry experience, ensuring top-notch design solutions
-                      tailored to your needs.
+                      Leverage our team's decades of experience in interior
+                      design, delivering bespoke solutions that transform your
+                      space into a masterpiece.
                     </span>
                   </li>
                   <li>
-                    <span className="font-bold">Affordability:</span>
+                    <span className="font-bold">Luxury Within Reach:</span>
                     <span className="text-[#545454]">
                       {" "}
-                      Enjoy our budget-friendly options without compromising on
-                      quality or style, making exceptional design accessible to
-                      all.
+                      Experience premium design at competitive prices, making
+                      high-end interior solutions accessible without
+                      compromising on quality or style.
                     </span>
                   </li>
                   <li>
-                    <span className="font-bold">Personalization:</span>
+                    <span className="font-bold">Tailored to You:</span>
                     <span className="text-[#545454]">
                       {" "}
-                      Experience our great personalized attention and customized
-                      designs that reflect your unique preferences and
-                      lifestyle.
+                      Enjoy our signature personalized approach, creating custom
+                      designs that perfectly capture your unique taste and
+                      lifestyle needs.
                     </span>
                   </li>
                   <li>
-                    <span className="font-bold">Timely Delivery:</span>
+                    <span className="font-bold">Timely Excellence:</span>
                     <span className="text-[#545454]">
                       {" "}
-                      It counts on us for efficient project management and
-                      timely completion, ensuring your vision becomes reality
-                      right on schedule.
+                      Rely on our efficient project management for on-time
+                      delivery, bringing your vision to life exactly when
+                      promised.
                     </span>
                   </li>
                   <li>
-                    <span className="font-bold">Customer Satisfaction:</span>
+                    <span className="font-bold">Client-Centric Focus:</span>
                     <span className="text-[#545454]">
                       {" "}
-                      Our responsible commitment to your satisfaction means
-                      transparent communication, attention to detail, and a
-                      seamless, stress-free design journey from start to finish.
+                      Benefit from our unwavering commitment to your
+                      satisfaction, featuring transparent communication,
+                      meticulous attention to detail, and a smooth, enjoyable
+                      design process from concept to completion.
                     </span>
                   </li>
                 </ul>

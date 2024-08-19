@@ -39,11 +39,11 @@ const Projects = () => {
 
   return (
     <div
-      className="px-6 md:px-12 lg:px-24 lg:py-24 py-8 md:py-16"
+      className="px-6 md:px-12 lg:px-24 lg:pt-24 pt-8 md:pt-16"
       ref={sectionRef}
     >
       <div
-        className={`flex items-center ${
+        className={`flex items-center mb-12 lg:mb-15 ${
           sectionInView ? "animate-slide-right" : "opacity-0"
         } transition-opacity duration-500`}
       >

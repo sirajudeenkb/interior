@@ -116,7 +116,7 @@ const Services: React.FC = () => {
             </div>
 
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded-md hover:bg-[#444444] transition-colors duration-200 text-base md:text-lg w-fit mx-auto lg:mx-0">
-              <Link href="/services">Explore More</Link>
+              <Link href="/services">Explore All</Link>
             </button>
           </div>
         </div>

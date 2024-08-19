@@ -2,6 +2,7 @@ import About from "./Components/About";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services";
+import TestimonialSlider from "./Components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div id="projects-section">
         <Projects />
+      </div>
+      <div id="testimonial-section">
+        <TestimonialSlider />
       </div>
     </div>
   );

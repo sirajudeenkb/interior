@@ -24,15 +24,15 @@ const About = () => {
           About Us
         </h1>
       </div>
-      <div
-        ref={aboutRef}
-        className={`container mx-auto py-8 md:py-12 lg:py-16 transition-opacity duration-[2500ms] ${
-          aboutInView ? "animate-slide-right opacity-100" : " opacity-0"
-        }`}
-      >
+      <div className="container mx-auto py-8 md:py-12 lg:py-16 ">
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
-            <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
+            <div
+              ref={aboutRef}
+              className={`relative w-full pb-[75%] rounded-lg overflow-hidden transition-opacity duration-[2500ms] ${
+                aboutInView ? "animate-slide-right opacity-100" : "opacity-0"
+              }`}
+            >
               <Image
                 src={interior}
                 alt="About Us"
@@ -42,7 +42,12 @@ const About = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex flex-col justify-start">
+          <div
+            ref={aboutRef}
+            className={`w-full lg:w-1/2 flex flex-col justify-start overflow-hidden transition-opacity duration-[2500ms] ${
+              aboutInView ? "animate-slide-left opacity-100" : "opacity-0"
+            }`}
+          >
             <div className="text-center lg:text-left mb-6">
               <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-left text-[#1F1F1F]">
                 Welcome to
@@ -75,14 +80,14 @@ const About = () => {
       </div>
 
       {/* Steps Section */}
-      <div
-        ref={stepsRef}
-        className={`container mx-auto pt-4 md:pt-12 lg:pt-16 transition-opacity overflow-hidden overflow-x-hidden duration-[2500ms] ${
-          stepsInView ? "animate-slide-left opacity-100" : " opacity-0"
-        }`}
-      >
+      <div className="container mx-auto pt-4 md:pt-12 lg:pt-16 ">
         <div className="flex flex-col lg:flex-row items-stretch">
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between">
+          <div
+            ref={stepsRef}
+            className={`w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex flex-col justify-between transition-opacity duration-[2500ms] ${
+              stepsInView ? "animate-slide-right opacity-100" : "opacity-0"
+            }`}
+          >
             <div className="space-y-10">
               <h2 className="text-3xl lg:text-5xl md:text-4xl font-semibold mb-8 text-[#1F1F1F]">
                 Designing Your Dream in Three Simple Steps
@@ -147,7 +152,12 @@ const About = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-start">
-            <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
+            <div
+              ref={stepsRef}
+              className={`relative w-full pb-[75%] rounded-lg overflow-hidden transition-opacity duration-[2500ms] ${
+                stepsInView ? "animate-slide-left opacity-100" : "opacity-0"
+              }`}
+            >
               <Image
                 src={section}
                 alt="About Us"

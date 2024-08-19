@@ -38,7 +38,12 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
 };
 
 const Services: React.FC = () => {
-  const { ref, inView } = useInView({
+  const { ref: sectionRef, inView: sectionInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: contentRef, inView: contentInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
@@ -46,11 +51,11 @@ const Services: React.FC = () => {
   return (
     <section
       className="px-6 md:px-12 lg:px-24 py-16 lg:py-24 overflow-x-hidden"
-      ref={ref}
+      ref={sectionRef}
     >
       <div
         className={`flex items-center ${
-          inView ? "animate-slide-right" : "opacity-0"
+          sectionInView ? "animate-slide-right" : "opacity-0"
         } transition-opacity duration-500`}
       >
         <div className="w-10 md:w-12 lg:w-16 border-t border-[#1F1F1F] mr-5"></div>
@@ -60,7 +65,12 @@ const Services: React.FC = () => {
       </div>
       <div className="container mx-auto mt-8 md:mt-12 lg:mt-16">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-16">
-          <div className="w-full lg:w-1/2">
+          <div
+            className={`w-full lg:w-1/2 transition-opacity duration-[2500ms] ${
+              contentInView ? "animate-slide-right opacity-100" : "opacity-0"
+            }`}
+            ref={contentRef}
+          >
             <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
               <Image
                 src={interior}
@@ -72,7 +82,12 @@ const Services: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 flex flex-col justify-between gap-y-6">
+          <div
+            className={`w-full lg:w-1/2 flex flex-col justify-between gap-y-6 transition-opacity duration-[2500ms] ${
+              contentInView ? "animate-slide-left opacity-100" : "opacity-0"
+            }`}
+            ref={contentRef}
+          >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#1F1F1F] text-center lg:text-left">
               Designing Your Dream with Brilliance
             </h2>
@@ -80,7 +95,7 @@ const Services: React.FC = () => {
             <p className="text-base md:text-lg text-[#545454]">
               At Narasimha Interior Decorators, we take pride in transforming
               spaces into stunning living environments. As the top interior
-              decorators  we bring your vision to life with creativity, 
+              decorators we bring your vision to life with creativity,
               precision, and expertise.
             </p>
 

@@ -18,6 +18,30 @@ const Hero = () => {
         <button className="w-full md:w-auto bg-[#1F1F1F] text-white text-sm md:text-base font-medium py-3 md:py-4 px-8 md:px-12 rounded hover:bg-[#444444]">
           Start project
         </button>
+        <div className="w-full">
+          <div className="flex flex-wrap justify-between gap-5">
+            <div className="flex-1 min-w-[120px]">
+              <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F]">
+                500+
+              </p>
+              <p className="text-lg md:text-xl font-medium">
+                Projects Completed
+              </p>
+            </div>
+            <div className="flex-1 min-w-[120px]">
+              <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F] ">
+                1000+
+              </p>
+              <p className="text-lg md:text-xl font-medium">Happy Customers</p>
+            </div>
+            <div className="flex-1 min-w-[120px]">
+              <p className="text-3xl md:text-4xl font-bold text-[#1F1F1F]">
+                50+
+              </p>
+              <p className="text-lg md:text-xl font-medium">Design Styles</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="flex-shrink-0 w-full md:w-auto">
         <Image

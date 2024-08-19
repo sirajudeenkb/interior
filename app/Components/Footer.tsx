@@ -23,9 +23,9 @@ function Footer() {
         <div className="w-full flex md:flex-row flex-col justify-around items-start">
           <div className="p-5">
             <ul>
-              <p className="font-semibold text-2xl pb-5">Br Interiors</p>
+              <p className="font-semibold text-2xl pb-5">Br Interior</p>
               <p className="text-start text-base text-gray-100 md:text-left mb-6">
-                Br Interiors your premier <br />
+                Br Interior your premier <br />
                 destination for luxury and <br />
                 modern interior design.
               </p>

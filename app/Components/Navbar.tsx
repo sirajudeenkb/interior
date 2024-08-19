@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="flex w-full items-center justify-between px-[20px] py-[15px] lg:container lg:mx-auto lg:px-20">
       <div>
         <span className="lg:block md:block hidden text-xl text-[#1F1F1F] font-semibold">
-          Br Interiors
+          Br Interior
         </span>
         <Image className="lg:hidden md:hidden sm:block" src={Logo} alt="Logo" />
       </div>

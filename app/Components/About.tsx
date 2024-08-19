@@ -57,21 +57,22 @@ const About = () => {
                 Br Interior Decorators
               </h2>
             </div>
-            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454]">
-              Narasimha Interior Decorators is your go-to choice for top and
-              Budget interior design services in Madipakkam & All over Chennai
-              Established in 2016. Specializing in home and office
-              transformations, we excel in crafting unique designs for bedrooms,
-              kitchens, and more. Our commitment to affordability ensures
-              quality without compromise. Experience the perfect blend of
-              comfort and aesthetics with us.
+            <p className="text-sm sm:text-base md:text-lg mb-6 text-[#545454] text-justify">
+              Br Interior is your premier choice for luxurious and
+              budget-friendly interior design services across Chennai.
+              Established in 2010. Our expertise spans elegant bedroom designs,
+              state-of-the-art modular kitchens, and stunning office layouts.
+              We're committed to delivering exceptional quality without
+              compromising affordability, ensuring each project perfectly
+              balances comfort and aesthetics.
               <br />
               <br />
-              At Narasimha Interior Decorators, we take pride in transforming
-              spaces into stunning living environments. As the top interior
-              decorators in Madipakkam, Medavakkam, Nanganallur, Velachery,
-              Keelkattalai, Pallikaranai, OMR, ECR, and Chennai, we bring your
-              vision to life with creativity, precision, and expertise.
+              At Br Interior, we take pride in creating breathtaking living and
+              working environments. As leading interior designers in Chennai, we
+              serve areas including Perambur, Triplicane, Parrys, and beyond.
+              Our skilled team brings your vision to life with creativity,
+              precision, and unmatched expertise. We offer a full range of
+              interior solutions to elevate your space.
             </p>
             <button className="px-6 py-3 bg-[#1F1F1F] text-white rounded hover:bg-[#444444] text-sm sm:text-base md:text-lg w-fit mx-auto lg:mx-0">
               <Link href="/about">Know More</Link>
@@ -105,7 +106,7 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-[#1F1F1F]">
                     Start Project
                   </h3>
-                  <p className="text-[#545454] text-sm sm:text-base md:text-lg">
+                  <p className="text-[#545454] text-sm sm:text-base md:text-lg text-justify">
                     Embark on your design adventure by initiating your project.
                     Share your vision and set the stage for a bespoke design
                     experience.
@@ -122,12 +123,12 @@ const About = () => {
                 </div>
                 <div className="flex flex-col gap-y-4">
                   <h3 className="text-xl font-semibold text-[#1F1F1F]">
-                    Craft
+                    Collaborate
                   </h3>
-                  <p className="text-[#545454] text-sm sm:text-base md:text-lg">
-                    Collaborate closely to achieve design excellence refining
-                    your vision and crafting brilliance into every aspect of
-                    your space.
+                  <p className="text-[#545454] text-sm sm:text-base md:text-lg text-justify">
+                    Collaborate with our skilled team to refine and perfect your
+                    design. We ensure every detail reflects your style and meets
+                    functional needs.
                   </p>
                 </div>
               </div>
@@ -143,10 +144,10 @@ const About = () => {
                   <h3 className="text-xl font-semibold text-[#1F1F1F]">
                     Execute
                   </h3>
-                  <p className="text-[#545454] text-sm sm:text-base md:text-lg">
-                    Witness your vision becoming a reality as we execute the
-                    design plan with precision. Celebrate the joy of your newly
-                    transformed space.
+                  <p className="text-[#545454] text-sm sm:text-base md:text-lg text-justify">
+                    Watch your vision come to life. Experience the thrill of
+                    stepping into your newly transformed, luxurious living
+                    space.
                   </p>
                 </div>
               </div>

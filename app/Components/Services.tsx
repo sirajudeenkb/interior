@@ -101,11 +101,11 @@ const Services: React.FC = () => {
             </p>
 
             <div className="w-full space-y-2">
-              <AccordionItem title="Living Room Interior">
+              <AccordionItem title="Home & Office Room Interior">
                 We specialize in creating warm and inviting living spaces that
                 reflect your personal style and maximize comfort.
               </AccordionItem>
-              <AccordionItem title="Commercial Office Room Interior">
+              <AccordionItem title="Modular Kitchen Services">
                 Our team designs functional and inspiring work environments that
                 boost productivity and impress clients.
               </AccordionItem>

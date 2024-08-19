@@ -89,31 +89,31 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div
-          ref={menuRef}
-          className="lg:hidden md:hidden fixed left-0 w-full bg-white z-40 shadow-md"
-        >
-          {navLinks.map((item, index) => (
-            <Link href={item.path} key={index} legacyBehavior>
-              <a
-                className="block py-4 px-6 text-[#1F1F1F] font-medium hover:bg-gray-100 border-b border-gray-200"
-                onClick={toggleMenu}
-              >
-                {item.name}
-              </a>
-            </Link>
-          ))}
-          <Link href="/contact">
-            <button
-              className="w-full bg-[#1F1F1F] text-white text-sm font-semibold py-4 px-6 hover:bg-[#444444]"
+      <div
+        ref={menuRef}
+        className={`lg:hidden md:hidden fixed left-0 w-full bg-white z-40 transform transition-transform duration-500 ease-in-out ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        {navLinks.map((item, index) => (
+          <Link href={item.path} key={index} legacyBehavior>
+            <a
+              className="block py-4 px-6 text-[#1F1F1F] font-medium hover:bg-gray-100 border-b border-gray-200"
               onClick={toggleMenu}
             >
-              Contact Us
-            </button>
+              {item.name}
+            </a>
           </Link>
-        </div>
-      )}
+        ))}
+        <Link href="/contact">
+          <button
+            className="w-full bg-[#1F1F1F] text-white text-sm font-semibold py-4 px-6 hover:bg-[#444444]"
+            onClick={toggleMenu}
+          >
+            Contact Us
+          </button>
+        </Link>
+      </div>
     </>
   );
 };

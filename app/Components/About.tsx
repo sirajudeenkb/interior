@@ -32,12 +32,12 @@ const About = () => {
       >
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-10">
-            <div className="relative w-full pb-[75%]">
+            <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
               <Image
                 src={interior}
                 alt="About Us"
                 layout="fill"
-                className="rounded-lg object-cover"
+                className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
@@ -147,12 +147,12 @@ const About = () => {
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-start">
-            <div className="relative w-full pb-[75%]">
+            <div className="relative w-full pb-[75%] rounded-lg overflow-hidden">
               <Image
                 src={section}
                 alt="About Us"
                 layout="fill"
-                className="rounded-lg object-cover"
+                className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>

@@ -79,7 +79,7 @@ const Hero = () => {
       </div>
       <div className="flex-shrink-0 w-full md:w-auto animate-slide-left">
         <Image
-          className="w-full md:w-auto h-64 md:h-80 lg:h-96 object-cover"
+          className="w-full md:w-auto h-64 md:h-80 lg:h-96 object-cover transition-transform duration-300 hover:scale-105 shadow-xl"
           src={interior}
           alt="Interior Design"
         />

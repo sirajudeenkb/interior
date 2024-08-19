@@ -9,7 +9,7 @@ const testimonials = [
   {
     quote:
       "Working with Br Interior was easy and stress-free. They handled everything from start to finish, and the result is better than we imagined. Our home feels put-together and stylish.",
-    author: "Sophie Carter",
+    author: "Gopinath",
     location: "Chennai, Tamil Nadu",
   },
   {
@@ -21,13 +21,13 @@ const testimonials = [
   {
     quote:
       "I was clueless about decorating my new apartment. Br Interior helped me pick colors and furniture that fit my style.",
-    author: "Sophie Carter",
+    author: "Latha",
     location: "Chennai, Tamil Nadu",
   },
   {
     quote:
       "Br Interior gave me a designer look on a DIY budget. Everything they did looks great and built to last. They made it happen!",
-    author: "James Bennett",
+    author: "Sampath Kumar",
     location: "Chennai, Tamil Nadu",
   },
   // Add more testimonials as needed

@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import { FaTimes } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
   const { ref: sectionRef, inView: sectionInView } = useInView({
@@ -60,13 +61,15 @@ const Projects = () => {
         {projectImages.map((imageSrc, index) => (
           <div
             key={index}
-            className="bg-gray-200 h-64 flex items-center justify-center text-center cursor-pointer transform transition-transform duration-300 hover:scale-105"
+            className="bg-gray-200 h-64 relative flex items-center justify-center text-center cursor-pointer transform transition-transform duration-300 hover:scale-105"
             onClick={() => openModal(imageSrc)}
           >
-            <img
+            <Image
               src={imageSrc}
               alt={`Project ${index + 1}`}
-              className="h-full w-full object-cover"
+              fill
+              sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              className="object-cover"
             />
           </div>
         ))}

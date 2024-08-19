@@ -75,11 +75,9 @@ const Services: React.FC = () => {
               <Image
                 src={interior}
                 alt="Interior Design Services"
-                layout="responsive"
-                width={200} // adjust this to the actual width of your image
-                height={200} // adjust this to the actual height of your image
-                objectFit="contain"
-                className="transition-transform duration-300 hover:scale-105"
+                width={0} // adjust this to the actual width of your image
+                height={0} // adjust this to the actual height of your image
+                className="w-auto h-auto object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>

@@ -24,9 +24,9 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
       <Image
         src={imageSrc}
         alt={title}
-        layout="fill"
-        objectFit="cover"
-        className="w-full h-full"
+        width={0}
+        height={0}
+        className=" object-cover w-full h-full"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-50 ">
         <div className=" animate-slide-up">

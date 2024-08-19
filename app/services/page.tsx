@@ -169,8 +169,9 @@ const Services: React.FC = () => {
               <Image
                 src={home_office_service}
                 alt="home_office_service"
-                layout="fit"
-                className="object-cover transition-transform duration-300 hover:scale-105"
+                width={0} // adjust this to the actual width of your image
+                height={0} // adjust this to the actual height of your image
+                className="w-auto h-auto object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>
@@ -290,7 +291,8 @@ const Services: React.FC = () => {
               <Image
                 src={modular_kitchen_services}
                 alt="modular_kitchen_services"
-                layout="fill"
+                fill
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
@@ -414,7 +416,8 @@ const Services: React.FC = () => {
               <Image
                 src={painting_services}
                 alt="painting_services"
-                layout="fill"
+                fill
+                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>

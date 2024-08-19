@@ -1,12 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
 const PasswordProtection = ({ children }: { children: React.ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
 
-  const correctPassword = "Curdrice@64"; // Replace with your password
+  const correctPassword = process.env.NEXT_PUBLIC_UPLOAD_PAGE_PASSWORD;
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
     e.preventDefault();
